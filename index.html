@@ -377,6 +377,8 @@
     #services {
       padding: 88px 0;
       background: var(--color-white);
+      background-image: radial-gradient(circle, rgba(30, 58, 95, 0.04) 1px, transparent 1px);
+      background-size: 28px 28px;
     }
 
     .services-grid {
@@ -391,6 +393,7 @@
       padding: 28px 24px;
       box-shadow: var(--shadow-sm);
       border: 1px solid var(--color-border);
+      border-left: 3px solid var(--color-accent);
       transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
       display: flex;
       flex-direction: column;
@@ -454,6 +457,8 @@
     #about {
       padding: 88px 0;
       background: var(--color-bg);
+      position: relative;
+      overflow: hidden;
     }
 
     .about-grid {
@@ -546,6 +551,8 @@
     #how-we-work {
       padding: 88px 0;
       background: var(--color-white);
+      background-image: radial-gradient(circle, rgba(30, 58, 95, 0.04) 1px, transparent 1px);
+      background-size: 28px 28px;
     }
 
     #how-we-work .section-title {
@@ -577,6 +584,11 @@
     .step-card {
       background: var(--color-bg);
       border: 1px solid var(--color-border);
+      border-top: 3px solid transparent;
+      background-image: linear-gradient(var(--color-bg), var(--color-bg)),
+                        linear-gradient(90deg, var(--color-accent), rgba(29,111,202,0.2));
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
       border-radius: var(--radius-lg);
       padding: 28px 20px;
       text-align: center;
@@ -638,6 +650,8 @@
     #offers {
       padding: 88px 0;
       background: var(--color-bg);
+      position: relative;
+      overflow: hidden;
     }
 
     .offers-grid {
@@ -711,6 +725,8 @@
     #geography {
       padding: 88px 0;
       background: var(--color-white);
+      background-image: radial-gradient(circle, rgba(30, 58, 95, 0.04) 1px, transparent 1px);
+      background-size: 28px 28px;
     }
 
     .geo-content {
@@ -807,6 +823,8 @@
       padding: 88px 0;
       background: var(--color-bg);
       border-top: 1px solid var(--color-border);
+      position: relative;
+      overflow: hidden;
     }
 
     #contacts .section-title {
@@ -1346,6 +1364,32 @@
         width: 100%;
         text-align: center;
       }
+    }
+
+    /* =============================================
+       DECORATIVE BACKGROUND ELEMENTS
+    ============================================= */
+    #about::before,
+    #offers::before,
+    #contacts::before {
+      content: '';
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(29, 111, 202, 0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    #about::before { top: -120px; right: -100px; }
+    #offers::before { bottom: -100px; left: -80px; }
+    #contacts::before { top: -80px; left: 50%; transform: translateX(-50%); }
+
+    #about > .container,
+    #offers > .container,
+    #contacts > .container {
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>
