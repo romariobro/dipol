@@ -961,6 +961,265 @@
     }
 
     /* =============================================
+       COMPANY PROFILE SECTION
+    ============================================= */
+    #profile {
+      padding: 88px 0;
+      background: var(--color-bg);
+    }
+
+    .profile-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+      margin-bottom: 56px;
+    }
+
+    .profile-text h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--color-border);
+    }
+
+    .profile-text p {
+      color: var(--color-text-mid);
+      line-height: 1.75;
+      font-size: 0.97rem;
+      margin-bottom: 14px;
+    }
+
+    .profile-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .profile-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .highlight-box {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      box-shadow: var(--shadow-xs);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .highlight-box:hover {
+      border-color: rgba(29,111,202,0.35);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .highlight-box-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(29,111,202,0.08);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .highlight-box-text h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 5px;
+    }
+
+    .highlight-box-text p {
+      font-size: 0.86rem;
+      color: var(--color-text-light);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .partner-services {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 28px 24px;
+      box-shadow: var(--shadow-xs);
+      margin-bottom: 56px;
+    }
+
+    .partner-services h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .partner-services h3::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: var(--color-accent);
+      border-radius: 2px;
+    }
+
+    .partner-services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+
+    .partner-service-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px 14px;
+      background: var(--color-bg);
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+    }
+
+    .partner-service-item::before {
+      content: '✓';
+      color: var(--color-accent);
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .partner-service-item span {
+      font-size: 0.88rem;
+      color: var(--color-text-mid);
+      line-height: 1.45;
+    }
+
+    /* Clients section */
+    .clients-block {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 36px 36px 32px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .clients-block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .clients-block h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .clients-block h3::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 22px;
+      background: var(--color-accent);
+      border-radius: 2px;
+    }
+
+    .clients-count-badge {
+      background: rgba(29,111,202,0.08);
+      border: 1px solid rgba(29,111,202,0.2);
+      color: var(--color-accent);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .client-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 9px 12px;
+      background: var(--color-bg);
+      border-radius: 6px;
+      border: 1px solid transparent;
+      transition: border-color var(--transition), background var(--transition);
+    }
+
+    .client-item:hover {
+      background: rgba(29,111,202,0.04);
+      border-color: rgba(29,111,202,0.2);
+    }
+
+    .client-item::before {
+      content: '—';
+      color: var(--color-accent);
+      font-weight: 700;
+      font-size: 0.78rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .client-item span {
+      font-size: 0.84rem;
+      color: var(--color-text-mid);
+      line-height: 1.4;
+    }
+
+    .clients-closing {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.92rem;
+      color: var(--color-text-mid);
+      font-style: italic;
+      text-align: center;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 900px) {
+      .profile-intro {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .clients-block {
+        padding: 24px 20px 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .clients-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =============================================
        SCROLL ANIMATIONS
     ============================================= */
     @keyframes fadeInUp {
@@ -1099,6 +1358,7 @@
   <button class="nav-close" onclick="closeNav()" aria-label="Закрыть меню">✕</button>
   <a href="#services" onclick="closeNav()">Услуги</a>
   <a href="#about" onclick="closeNav()">О компании</a>
+  <a href="#profile" onclick="closeNav()">Клиенты</a>
   <a href="#how-we-work" onclick="closeNav()">Как мы работаем</a>
   <a href="#offers" onclick="closeNav()">Акции</a>
   <a href="#geography" onclick="closeNav()">География</a>
@@ -1119,6 +1379,7 @@
     <nav aria-label="Основная навигация">
       <a href="#services">Услуги</a>
       <a href="#about">О компании</a>
+      <a href="#profile">Клиенты</a>
       <a href="#how-we-work">Как мы работаем</a>
       <a href="#offers">Акции</a>
       <a href="#geography">География</a>
@@ -1332,6 +1593,172 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- =============================================
+     COMPANY PROFILE SECTION
+============================================= -->
+<section id="profile">
+  <div class="container">
+    <h2 class="section-title">О предприятии</h2>
+    <p class="section-subtitle">
+      Более 30 лет опыта в сфере технических средств безопасности — от небольших офисов до объектов федерального значения
+    </p>
+
+    <!-- Two-column: description + highlights -->
+    <div class="profile-intro">
+
+      <div class="profile-text">
+        <h3>Описание деятельности</h3>
+        <p>
+          ООО НПФ «Диполь-М» предлагает услуги в области продажи, монтажа и пусконаладки систем
+          пожарной и охранной сигнализации, периметровых средств охраны, систем видеонаблюдения,
+          систем ограничения доступа, заборов, инженерных заграждений, технических средств обеспечения
+          безопасности и средств коммуникации и связи.
+        </p>
+        <p>
+          Монтаж и пусконаладку производим в Пензе, Пензенской области (в том числе г. Заречный)
+          и на всей территории Российской Федерации.
+        </p>
+        <p>
+          Предприятие «Диполь-М» создано в <strong>1991 году</strong> для проведения монтажных и пусконаладочных
+          работ систем технического обеспечения безопасности и связи, а также для их разработки,
+          производства и продажи.
+        </p>
+        <p>
+          Предприятие располагает собственной производственной базой, штатом высококвалифицированных
+          сотрудников и большим опытом работы в области технических средств обеспечения безопасности
+          и разработки систем видеонаблюдения и связи любой степени сложности.
+        </p>
+        <p>
+          Особую эффективность при создании комплексных систем безопасности даёт возможность
+          использования приборов, оборудования и комплексов, разработанных и производимых
+          для оборудования объектов МВД, ФСБ, АЭС и защиты государственной границы.
+          Большое внимание уделяется внедрению новейших достижений науки и техники:
+          интеллектуальные компьютерные системы видеонаблюдения, новейшие средства охраны
+          периметра и многое другое.
+        </p>
+      </div>
+
+      <div class="profile-highlights">
+        <div class="highlight-box">
+          <div class="highlight-box-icon">🏭</div>
+          <div class="highlight-box-text">
+            <h4>Собственная производственная база</h4>
+            <p>Позволяет выполнять работы любой сложности с высоким качеством по минимальным ценам</p>
+          </div>
+        </div>
+        <div class="highlight-box">
+          <div class="highlight-box-icon">🛡️</div>
+          <div class="highlight-box-text">
+            <h4>Спецтехника для объектов МВД и ФСБ</h4>
+            <p>Применяем приборы и комплексы, разработанные для оборудования объектов МВД, ФСБ, АЭС и охраны государственной границы</p>
+          </div>
+        </div>
+        <div class="highlight-box">
+          <div class="highlight-box-icon">🤝</div>
+          <div class="highlight-box-text">
+            <h4>Индивидуальный подход</h4>
+            <p>Решаем задачи любой сложности с соблюдением полной конфиденциальности и персональным подбором оборудования</p>
+          </div>
+        </div>
+        <div class="highlight-box">
+          <div class="highlight-box-icon">🎓</div>
+          <div class="highlight-box-text">
+            <h4>Опыт работы с учреждениями образования</h4>
+            <p>Школы, колледжи, детские учреждения Пензенской области — специальные условия и тарифы</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /profile-intro -->
+
+    <!-- Partner services -->
+    <div class="partner-services">
+      <h3>Партнёрские услуги в области пожарной безопасности</h3>
+      <div class="partner-services-list">
+        <div class="partner-service-item">
+          <span>Декларация пожарной безопасности — разработка и регистрация</span>
+        </div>
+        <div class="partner-service-item">
+          <span>Проведение независимой оценки рисков (аудита) в области пожарной безопасности</span>
+        </div>
+        <div class="partner-service-item">
+          <span>Расчёты по вычислению пожарного риска для любых объектов</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client list -->
+    <div class="clients-block">
+      <div class="clients-block-header">
+        <h3>Объекты, на которых выполнялись работы</h3>
+        <span class="clients-count-badge">50+ организаций</span>
+      </div>
+
+      <div class="clients-grid">
+        <div class="client-item"><span>Пункты весового контроля Федеральной дирекции автодороги Москва–Самара (г. Рязань, г. Сызрань, р.п. Мокшан)</span></div>
+        <div class="client-item"><span>Комбикормовый з-д Каменского элеватора</span></div>
+        <div class="client-item"><span>Хлебозавод г. Стерлитамак</span></div>
+        <div class="client-item"><span>Нижнеломовский ликёро-водочный з-д</span></div>
+        <div class="client-item"><span>ООО «Респект», г. Нижний Ломов</span></div>
+        <div class="client-item"><span>ООО «Пензахлебопродукт», г. Пенза</span></div>
+        <div class="client-item"><span>Чаадаевское хлебоприёмное предприятие</span></div>
+        <div class="client-item"><span>Кададинский леспромхоз, Пензенская обл.</span></div>
+        <div class="client-item"><span>ООО «Магистраль», с. Чемодановка</span></div>
+        <div class="client-item"><span>Спичечная ф-ка «Победа», с. Верхний Ломов</span></div>
+        <div class="client-item"><span>ООО НПФ «Кристалл», г. Пенза</span></div>
+        <div class="client-item"><span>ОАО «Пензаспиртпром»</span></div>
+        <div class="client-item"><span>ООО «Политрон», г. Заречный</span></div>
+        <div class="client-item"><span>ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение</span></div>
+        <div class="client-item"><span>ЗАО «Регион»</span></div>
+        <div class="client-item"><span>Пензенское управление лесного хозяйства</span></div>
+        <div class="client-item"><span>Каменский ГРОВД</span></div>
+        <div class="client-item"><span>ООО «Пенза Алкопром»</span></div>
+        <div class="client-item"><span>Отдел образования Пензенского р-на</span></div>
+        <div class="client-item"><span>Детская школа искусств г. Заречного</span></div>
+        <div class="client-item"><span>ФГУП НТК «ПО Старт»</span></div>
+        <div class="client-item"><span>ООО «Пензенский Опткоопторг»</span></div>
+        <div class="client-item"><span>ЗАО «Пензанефтепродукт»</span></div>
+        <div class="client-item"><span>11 КПП г. Заречного</span></div>
+        <div class="client-item"><span>Кредитно-кассовый офис «Пенза-Центральный» ООО КБ «Ренессанс Капитал»</span></div>
+        <div class="client-item"><span>Плавательный бассейн г. М. Сердоба</span></div>
+        <div class="client-item"><span>ГОУ СПО «Мокшанский агротехнологический колледж»</span></div>
+        <div class="client-item"><span>Управление Росреестра по Пензенской области</span></div>
+        <div class="client-item"><span>Региональное управление № 59 ФМБА России</span></div>
+        <div class="client-item"><span>Сеть магазинов «Магнит», г. Заречный Пензенской области</span></div>
+        <div class="client-item"><span>ООО «Заря+»</span></div>
+        <div class="client-item"><span>Бар «Союз», г. Заречный</span></div>
+        <div class="client-item"><span>ООО «Слайс-Арт»</span></div>
+        <div class="client-item"><span>ОАО «Ульяновскнефть» УПН «Клин»</span></div>
+        <div class="client-item"><span>ОАО «Ульяновскнефть» УППН «Пензенская»</span></div>
+        <div class="client-item"><span>Тамалинская ЦРБ</span></div>
+        <div class="client-item"><span>Бизнес-центр «Плаза», г. Пенза</span></div>
+        <div class="client-item"><span>Здание прокуратуры Октябрьского района г. Пенза</span></div>
+        <div class="client-item"><span>Бар «1000 и 1 ночь», г. Пенза</span></div>
+        <div class="client-item"><span>Магазин «Строймаг», г. Пенза</span></div>
+        <div class="client-item"><span>ОАО Птицефабрика «Васильевская» (площадки Кутля, Восточная, МТФ), группа Черкизово</span></div>
+        <div class="client-item"><span>МБОУ СОШ г. Сурска</span></div>
+        <div class="client-item"><span>МБОУ ООШ г. Сурска им. В.В. Анисимова</span></div>
+        <div class="client-item"><span>ЗАО АПК «Нечаевский»</span></div>
+        <div class="client-item"><span>МБОУ НОШ г. Городище</span></div>
+        <div class="client-item"><span>МБОУ ООШ с. Павло-Куракино</span></div>
+        <div class="client-item"><span>Стадион г. Городище</span></div>
+        <div class="client-item"><span>МБОУ СОШ с. Канаевка</span></div>
+        <div class="client-item"><span>МОУ СОШ с. Названовка</span></div>
+        <div class="client-item"><span>МБОУ ООШ р.п. Чаадаевка</span></div>
+        <div class="client-item"><span>МОУ СОШ с. Старая Потловка</span></div>
+        <div class="client-item"><span>МОУ СОШ №1 им. А.С. Пушкина р.п. Колышлей</span></div>
+        <div class="client-item"><span>и многие другие объекты</span></div>
+      </div>
+
+      <p class="clients-closing">
+        Отличительная особенность предприятия — индивидуальный подход при решении конкретной задачи
+        и полная конфиденциальность при проведении работ.
+      </p>
+    </div><!-- /clients-block -->
+
   </div>
 </section>
 
