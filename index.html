@@ -1095,6 +1095,82 @@
         grid-template-columns: 1fr;
       }
     }
+  /* Gallery Slider */
+  .gallery-slider {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #eef2f7;
+  }
+  .gallery-slider .gallery-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a2e4a;
+    margin-bottom: 14px;
+  }
+  .gallery-slider .slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f0f3f8;
+    border: 1px solid #dde5ef;
+  }
+  .gallery-slider .slider-track {
+    display: flex;
+    transition: transform 0.45s ease;
+  }
+  .gallery-slider .slide {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .gallery-slider .slide img {
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .gallery-slider .slide-caption {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1a2e4a;
+    text-align: center;
+  }
+  .gallery-slider .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(30, 64, 128, 0.85);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: background 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .gallery-slider .slider-btn:hover {
+    background: rgba(26, 86, 219, 1);
+  }
+  .gallery-slider .slider-btn-prev { left: 10px; }
+  .gallery-slider .slider-btn-next { right: 10px; }
+  .gallery-slider .slider-counter {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.82rem;
+    color: #718096;
+  }
   </style>
 </head>
 <body>
@@ -1334,6 +1410,60 @@
             Отличительная особенность предприятия — индивидуальный подход при решении конкретной задачи
             и полная конфиденциальность при проведении работ.
           </p>
+          <div class="gallery-slider">
+            <div class="gallery-title">📷 Фотографии объектов</div>
+            <div class="slider-wrapper" id="gallerySlider" role="region" aria-label="Галерея фотографий объектов">
+              <button class="slider-btn slider-btn-prev" onclick="gallerySlide(-1)" aria-label="Предыдущий слайд">&#8249;</button>
+              <div class="slider-track" id="galleryTrack">
+                <div class="slide">
+                  <img src="Бар «Союз», г. Заречный.jpg" alt="Бар «Союз», г. Заречный">
+                  <div class="slide-caption">Бар «Союз», г. Заречный</div>
+                </div>
+                <div class="slide">
+                  <img src="Бизнес-центр «Плаза», г. Пенза.webp" alt="Бизнес-центр «Плаза», г. Пенза">
+                  <div class="slide-caption">Бизнес-центр «Плаза», г. Пенза</div>
+                </div>
+                <div class="slide">
+                  <img src="Детская школа искусств г. Заречного.jpg" alt="Детская школа искусств г. Заречного">
+                  <div class="slide-caption">Детская школа искусств г. Заречного</div>
+                </div>
+                <div class="slide">
+                  <img src="Комбикормовый з-д Каменского элеватора.jpg" alt="Комбикормовый з-д Каменского элеватора">
+                  <div class="slide-caption">Комбикормовый з-д Каменского элеватора</div>
+                </div>
+                <div class="slide">
+                  <img src="Нижнеломовский ликёро-водочный з-д.jpg" alt="Нижнеломовский ликёро-водочный з-д">
+                  <div class="slide-caption">Нижнеломовский ликёро-водочный з-д</div>
+                </div>
+                <div class="slide">
+                  <img src="ОАО «Пензаспиртпром».jpg" alt="ОАО «Пензаспиртпром»">
+                  <div class="slide-caption">ОАО «Пензаспиртпром»</div>
+                </div>
+                <div class="slide">
+                  <img src="Пункты весового контроля Федеральной дирекции автодороги Москва–Самара.webp" alt="Пункты весового контроля Федеральной дирекции автодороги Москва–Самара">
+                  <div class="slide-caption">Пункты весового контроля Федеральной дирекции автодороги Москва–Самара</div>
+                </div>
+                <div class="slide">
+                  <img src="Сеть магазинов «Магнит», г. Заречный Пензенской области.jpg" alt="Сеть магазинов «Магнит», г. Заречный Пензенской области">
+                  <div class="slide-caption">Сеть магазинов «Магнит», г. Заречный Пензенской области</div>
+                </div>
+                <div class="slide">
+                  <img src="Управление Росреестра по Пензенской области.webp" alt="Управление Росреестра по Пензенской области">
+                  <div class="slide-caption">Управление Росреестра по Пензенской области</div>
+                </div>
+                <div class="slide">
+                  <img src="ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение.jpg" alt="ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение">
+                  <div class="slide-caption">ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение</div>
+                </div>
+                <div class="slide">
+                  <img src="Хлебозавод г. Стерлитамак.jpg" alt="Хлебозавод г. Стерлитамак">
+                  <div class="slide-caption">Хлебозавод г. Стерлитамак</div>
+                </div>
+              </div>
+              <button class="slider-btn slider-btn-next" onclick="gallerySlide(1)" aria-label="Следующий слайд">&#8250;</button>
+            </div>
+            <div class="slider-counter" id="galleryCounter">1 / 11</div>
+          </div>
         </section>
 
         <!-- ======================================
@@ -1714,6 +1844,24 @@
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeNav();
   });
+</script>
+<script>
+  (function() {
+    var current = 0;
+    var track = document.getElementById('galleryTrack');
+    var counter = document.getElementById('galleryCounter');
+    var total = track.children.length;
+    counter.textContent = '1 / ' + total;
+    window.gallerySlide = function(dir) {
+      current = (current + dir + total) % total;
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      counter.textContent = (current + 1) + ' / ' + total;
+    };
+    document.getElementById('gallerySlider').addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') { gallerySlide(-1); }
+      else if (e.key === 'ArrowRight') { gallerySlide(1); }
+    });
+  })();
 </script>
 
 </body>
