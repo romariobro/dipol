@@ -1412,8 +1412,8 @@
           </p>
           <div class="gallery-slider">
             <div class="gallery-title">📷 Фотографии объектов</div>
-            <div class="slider-wrapper" id="gallerySlider">
-              <button class="slider-btn slider-btn-prev" onclick="gallerySlide(-1)">&#8249;</button>
+            <div class="slider-wrapper" id="gallerySlider" role="region" aria-label="Галерея фотографий объектов">
+              <button class="slider-btn slider-btn-prev" onclick="gallerySlide(-1)" aria-label="Предыдущий слайд">&#8249;</button>
               <div class="slider-track" id="galleryTrack">
                 <div class="slide">
                   <img src="Бар «Союз», г. Заречный.jpg" alt="Бар «Союз», г. Заречный">
@@ -1460,7 +1460,7 @@
                   <div class="slide-caption">Хлебозавод г. Стерлитамак</div>
                 </div>
               </div>
-              <button class="slider-btn slider-btn-next" onclick="gallerySlide(1)">&#8250;</button>
+              <button class="slider-btn slider-btn-next" onclick="gallerySlide(1)" aria-label="Следующий слайд">&#8250;</button>
             </div>
             <div class="slider-counter" id="galleryCounter">1 / 11</div>
           </div>
@@ -1848,14 +1848,19 @@
 <script>
   (function() {
     var current = 0;
-    var total = 11;
     var track = document.getElementById('galleryTrack');
     var counter = document.getElementById('galleryCounter');
+    var total = track.children.length;
+    counter.textContent = '1 / ' + total;
     window.gallerySlide = function(dir) {
       current = (current + dir + total) % total;
       track.style.transform = 'translateX(-' + (current * 100) + '%)';
       counter.textContent = (current + 1) + ' / ' + total;
     };
+    document.getElementById('gallerySlider').addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') { gallerySlide(-1); }
+      else if (e.key === 'ArrowRight') { gallerySlide(1); }
+    });
   })();
 </script>
 
