@@ -1173,9 +1173,41 @@
   }
   
 /* ===== PREMIUM HEADER + HERO OVERRIDE ===== */
-body { background: #eef3f8; }
-.site-header-top, .site-header-nav { display: none; }
-.premium-hero{position:relative;min-height:640px;padding:24px 0 58px;color:#fff;background:linear-gradient(90deg,rgba(5,16,31,.94) 0%,rgba(5,16,31,.86) 38%,rgba(5,16,31,.48) 66%,rgba(5,16,31,.18) 100%),url("dipol.png") center right/cover no-repeat;overflow:hidden}.premium-hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 28%,rgba(65,151,255,.16),transparent 28%);pointer-events:none}.premium-shell{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:0 18px}.premium-header{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px;padding:14px 18px;border:1px solid rgba(255,255,255,.18);border-radius:24px;background:rgba(7,20,35,.46);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 20px 60px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.12)}.premium-logo{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;min-width:190px}.premium-logo:hover{color:#fff;text-decoration:none}.premium-logo-mark{width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff,#dbeaff);color:#061321;font-weight:900;font-size:21px;box-shadow:0 10px 24px rgba(0,0,0,.22)}.premium-logo strong{display:block;font-size:18px;line-height:1.05;letter-spacing:.02em}.premium-logo small{display:block;margin-top:4px;color:rgba(255,255,255,.68);font-size:12px}.premium-nav{display:flex;align-items:center;justify-content:center;gap:26px;flex:1}.premium-nav a{color:rgba(255,255,255,.82);font-weight:650;font-size:14px;text-decoration:none}.premium-nav a:hover{color:#fff;text-decoration:none}.premium-actions{display:flex;align-items:center;gap:14px}.premium-phone{color:#fff;font-weight:800;white-space:nowrap;text-decoration:none}.premium-phone:hover{color:#fff;text-decoration:none}.premium-consult{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:14px;border:1px solid rgba(255,255,255,.26);color:#fff;font-weight:750;font-size:14px;text-decoration:none;background:rgba(20,105,255,.22)}.premium-consult:hover{color:#fff;text-decoration:none;background:rgba(20,105,255,.34)}.premium-burger{display:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:rgba(255,255,255,.08);cursor:pointer}.premium-burger span{display:block;width:20px;height:2px;margin:4px auto;background:#fff;border-radius:2px}.premium-hero-content{max-width:650px;padding-top:118px}.premium-kicker{display:inline-flex;margin-bottom:22px;color:#8fc6ff;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.premium-hero h1{margin:0 0 22px;color:#fff;font-size:clamp(44px,7vw,76px);line-height:1.04;font-weight:900;letter-spacing:-.045em}.premium-hero p{max-width:610px;margin:0 0 30px;color:rgba(255,255,255,.86);font-size:20px;line-height:1.6}.premium-hero-buttons{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:54px}.premium-btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border-radius:14px;font-size:15px;font-weight:800;text-decoration:none;color:#fff;background:linear-gradient(180deg,#1f7aff,#0c55d9);box-shadow:0 16px 34px rgba(15,92,220,.35)}.premium-btn:hover{color:#fff;text-decoration:none}.premium-btn--ghost{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.28);box-shadow:none}.premium-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.premium-metric{min-height:104px;padding:20px 22px;border-radius:18px;border:1px solid rgba(255,255,255,.22);background:rgba(7,20,35,.46);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.premium-metric strong{display:block;color:#fff;font-size:25px;line-height:1.15;margin-bottom:8px}.premium-metric span{color:rgba(255,255,255,.72);font-size:14px;line-height:1.45}.page-body{padding-top:32px}@media(max-width:1020px){.premium-nav,.premium-phone,.premium-consult{display:none}.premium-burger{display:block}.premium-hero-content{padding-top:82px}.premium-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:640px){.premium-hero{min-height:auto;padding:14px 0 36px;background:linear-gradient(180deg,rgba(5,16,31,.94),rgba(5,16,31,.75)),url("dipol.png") center/cover no-repeat}.premium-header{border-radius:18px;min-height:66px;padding:10px 12px}.premium-logo-mark{width:42px;height:42px;border-radius:14px}.premium-logo small{display:none}.premium-hero-content{padding-top:64px}.premium-hero p{font-size:16px}.premium-hero-buttons{margin-bottom:28px}.premium-btn{width:100%}.premium-metrics{grid-template-columns:1fr 1fr;gap:10px}.premium-metric{min-height:88px;padding:14px}.premium-metric strong{font-size:20px}}
+body { background:#eef3f8; }
+.site-header-top,.site-header-nav{display:none;}
+.premium-hero{position:relative;min-height:620px;padding:22px 0 54px;color:#fff;background:linear-gradient(90deg,rgba(5,16,31,.94) 0%,rgba(5,16,31,.86) 38%,rgba(5,16,31,.50) 66%,rgba(5,16,31,.20) 100%),url("dipol.png") center right/cover no-repeat;overflow:hidden;}
+.premium-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 28%,rgba(65,151,255,.16),transparent 28%);pointer-events:none;}
+.premium-shell{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:0 18px;}
+.premium-header{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;min-height:72px;padding:12px 16px;border:1px solid rgba(255,255,255,.18);border-radius:22px;background:rgba(7,20,35,.56);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 18px 50px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.12);}
+.premium-logo{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;white-space:nowrap;}
+.premium-logo:hover{color:#fff;text-decoration:none;}
+.premium-logo-mark{width:44px;height:44px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff,#dbeaff);color:#061321;font-weight:900;font-size:20px;box-shadow:0 10px 24px rgba(0,0,0,.22);}
+.premium-logo strong{display:block;font-size:17px;line-height:1.05;letter-spacing:.01em;}
+.premium-logo small{display:block;margin-top:4px;color:rgba(255,255,255,.68);font-size:12px;}
+.premium-nav{display:flex;align-items:center;justify-content:center;gap:22px;min-width:0;}
+.premium-nav a{color:rgba(255,255,255,.82);font-weight:650;font-size:14px;text-decoration:none;white-space:nowrap;}
+.premium-nav a:hover{color:#fff;text-decoration:none;}
+.premium-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;white-space:nowrap;}
+.premium-phone{color:#fff;font-weight:800;font-size:14px;text-decoration:none;}
+.premium-phone:hover{color:#fff;text-decoration:none;}
+.premium-consult{display:none;}
+.premium-burger{display:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:rgba(255,255,255,.08);cursor:pointer;}
+.premium-burger span{display:block;width:20px;height:2px;margin:4px auto;background:#fff;border-radius:2px;}
+.premium-hero-content{max-width:650px;padding-top:104px;}
+.premium-kicker{display:inline-flex;margin-bottom:18px;color:#8fc6ff;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;}
+.premium-hero h1{margin:0 0 20px;color:#fff;font-size:clamp(42px,7vw,70px);line-height:1.04;font-weight:900;letter-spacing:-.045em;}
+.premium-hero p{max-width:590px;margin:0 0 28px;color:rgba(255,255,255,.86);font-size:19px;line-height:1.58;}
+.premium-hero-buttons{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:42px;}
+.premium-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:14px;font-size:15px;font-weight:800;text-decoration:none;color:#fff;background:linear-gradient(180deg,#1f7aff,#0c55d9);box-shadow:0 16px 34px rgba(15,92,220,.35);}
+.premium-btn:hover{color:#fff;text-decoration:none;}
+.premium-btn--ghost{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.28);box-shadow:none;}
+.premium-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+.premium-metric{min-height:94px;padding:16px 18px;border-radius:18px;border:1px solid rgba(255,255,255,.22);background:rgba(7,20,35,.46);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);}
+.premium-metric strong{display:block;color:#fff;font-size:21px;line-height:1.15;margin-bottom:7px;}
+.premium-metric span{color:rgba(255,255,255,.72);font-size:13px;line-height:1.4;}
+.page-body{padding-top:32px;}
+@media(max-width:1080px){.premium-header{grid-template-columns:auto auto;}.premium-nav,.premium-phone,.premium-consult{display:none;}.premium-actions{justify-content:flex-end;}.premium-burger{display:block;}.premium-hero-content{padding-top:82px;}.premium-metrics{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:640px){.premium-hero{min-height:auto;padding:14px 0 36px;background:linear-gradient(180deg,rgba(5,16,31,.94),rgba(5,16,31,.75)),url("dipol.png") center/cover no-repeat;}.premium-header{min-height:64px;padding:10px 12px;border-radius:18px;}.premium-logo-mark{width:42px;height:42px;border-radius:14px;}.premium-logo small{display:none;}.premium-hero-content{padding-top:60px;}.premium-hero p{font-size:16px;}.premium-hero-buttons{margin-bottom:28px;}.premium-btn{width:100%;}.premium-metrics{grid-template-columns:1fr 1fr;gap:10px;}.premium-metric{min-height:84px;padding:14px;}.premium-metric strong{font-size:18px;}}
 
 </style>
 </head>
@@ -1207,7 +1239,11 @@ body { background: #eef3f8; }
         <span><strong>Диполь-М</strong><small>Системы безопасности с 1991 года</small></span>
       </a>
       <nav class="premium-nav" aria-label="Основная навигация">
-        <a href="#profile">О компании</a><a href="#services">Услуги</a><a href="#profile">Объекты</a><a href="#how-we-work">Как работаем</a><a href="#contacts">Контакты</a>
+        <a href="#profile">О компании</a>
+        <a href="#services">Услуги</a>
+        <a href="#profile">Объекты</a>
+        <a href="#how-we-work">Как работаем</a>
+        <a href="#contacts">Контакты</a>
       </nav>
       <div class="premium-actions">
         <a class="premium-phone" href="tel:89270942331">8-927-094-23-31</a>
