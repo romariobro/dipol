@@ -1171,7 +1171,13 @@
     font-size: 0.82rem;
     color: #718096;
   }
-  </style>
+  
+/* ===== PREMIUM HEADER + HERO OVERRIDE ===== */
+body { background: #eef3f8; }
+.site-header-top, .site-header-nav { display: none; }
+.premium-hero{position:relative;min-height:640px;padding:24px 0 58px;color:#fff;background:linear-gradient(90deg,rgba(5,16,31,.94) 0%,rgba(5,16,31,.86) 38%,rgba(5,16,31,.48) 66%,rgba(5,16,31,.18) 100%),url("dipol.png") center right/cover no-repeat;overflow:hidden}.premium-hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 28%,rgba(65,151,255,.16),transparent 28%);pointer-events:none}.premium-shell{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:0 18px}.premium-header{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px;padding:14px 18px;border:1px solid rgba(255,255,255,.18);border-radius:24px;background:rgba(7,20,35,.46);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 20px 60px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.12)}.premium-logo{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;min-width:190px}.premium-logo:hover{color:#fff;text-decoration:none}.premium-logo-mark{width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff,#dbeaff);color:#061321;font-weight:900;font-size:21px;box-shadow:0 10px 24px rgba(0,0,0,.22)}.premium-logo strong{display:block;font-size:18px;line-height:1.05;letter-spacing:.02em}.premium-logo small{display:block;margin-top:4px;color:rgba(255,255,255,.68);font-size:12px}.premium-nav{display:flex;align-items:center;justify-content:center;gap:26px;flex:1}.premium-nav a{color:rgba(255,255,255,.82);font-weight:650;font-size:14px;text-decoration:none}.premium-nav a:hover{color:#fff;text-decoration:none}.premium-actions{display:flex;align-items:center;gap:14px}.premium-phone{color:#fff;font-weight:800;white-space:nowrap;text-decoration:none}.premium-phone:hover{color:#fff;text-decoration:none}.premium-consult{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:14px;border:1px solid rgba(255,255,255,.26);color:#fff;font-weight:750;font-size:14px;text-decoration:none;background:rgba(20,105,255,.22)}.premium-consult:hover{color:#fff;text-decoration:none;background:rgba(20,105,255,.34)}.premium-burger{display:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:rgba(255,255,255,.08);cursor:pointer}.premium-burger span{display:block;width:20px;height:2px;margin:4px auto;background:#fff;border-radius:2px}.premium-hero-content{max-width:650px;padding-top:118px}.premium-kicker{display:inline-flex;margin-bottom:22px;color:#8fc6ff;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.premium-hero h1{margin:0 0 22px;color:#fff;font-size:clamp(44px,7vw,76px);line-height:1.04;font-weight:900;letter-spacing:-.045em}.premium-hero p{max-width:610px;margin:0 0 30px;color:rgba(255,255,255,.86);font-size:20px;line-height:1.6}.premium-hero-buttons{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:54px}.premium-btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border-radius:14px;font-size:15px;font-weight:800;text-decoration:none;color:#fff;background:linear-gradient(180deg,#1f7aff,#0c55d9);box-shadow:0 16px 34px rgba(15,92,220,.35)}.premium-btn:hover{color:#fff;text-decoration:none}.premium-btn--ghost{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.28);box-shadow:none}.premium-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.premium-metric{min-height:104px;padding:20px 22px;border-radius:18px;border:1px solid rgba(255,255,255,.22);background:rgba(7,20,35,.46);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.premium-metric strong{display:block;color:#fff;font-size:25px;line-height:1.15;margin-bottom:8px}.premium-metric span{color:rgba(255,255,255,.72);font-size:14px;line-height:1.45}.page-body{padding-top:32px}@media(max-width:1020px){.premium-nav,.premium-phone,.premium-consult{display:none}.premium-burger{display:block}.premium-hero-content{padding-top:82px}.premium-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:640px){.premium-hero{min-height:auto;padding:14px 0 36px;background:linear-gradient(180deg,rgba(5,16,31,.94),rgba(5,16,31,.75)),url("dipol.png") center/cover no-repeat}.premium-header{border-radius:18px;min-height:66px;padding:10px 12px}.premium-logo-mark{width:42px;height:42px;border-radius:14px}.premium-logo small{display:none}.premium-hero-content{padding-top:64px}.premium-hero p{font-size:16px}.premium-hero-buttons{margin-bottom:28px}.premium-btn{width:100%}.premium-metrics{grid-template-columns:1fr 1fr;gap:10px}.premium-metric{min-height:88px;padding:14px}.premium-metric strong{font-size:20px}}
+
+</style>
 </head>
 <body>
 
@@ -1191,46 +1197,34 @@
 </div>
 
 <!-- =============================================
-     HEADER — TOP BANNER
+     PREMIUM HEADER + HERO
 ============================================= -->
-<header>
-  <div class="site-header-top">
-    <div class="wrap">
-      <div class="header-top-inner">
-        <a href="#hero" class="logo-block">
-          <div class="logo-icon">Д</div>
-          <div>
-            <div class="logo-text">Диполь<span>-М</span></div>
-            <div class="logo-sub">Системы безопасности с 1991 года</div>
-          </div>
-        </a>
-
-        <div class="header-phone-block">
-          <span class="phone-label">Наши телефоны</span>
-          <a href="tel:89270942331">8-927-094-23-31</a>
-          <span class="fax-line">Факс: (8412) 55-29-30</span>
-        </div>
-
-        <button class="burger" onclick="openNav()" aria-label="Открыть меню" aria-expanded="false" id="burgerBtn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+<header class="premium-hero" id="hero">
+  <div class="premium-shell">
+    <div class="premium-header">
+      <a href="#hero" class="premium-logo">
+        <span class="premium-logo-mark">Д</span>
+        <span><strong>Диполь-М</strong><small>Системы безопасности с 1991 года</small></span>
+      </a>
+      <nav class="premium-nav" aria-label="Основная навигация">
+        <a href="#profile">О компании</a><a href="#services">Услуги</a><a href="#profile">Объекты</a><a href="#how-we-work">Как работаем</a><a href="#contacts">Контакты</a>
+      </nav>
+      <div class="premium-actions">
+        <a class="premium-phone" href="tel:89270942331">8-927-094-23-31</a>
+        <a class="premium-consult" href="#contacts">Получить консультацию</a>
+        <button class="premium-burger" onclick="openNav()" aria-label="Открыть меню" aria-expanded="false" id="burgerBtn"><span></span><span></span><span></span></button>
       </div>
     </div>
-  </div>
-
-  <!-- Navigation bar -->
-  <div class="site-header-nav">
-    <div class="wrap">
-      <div class="nav-inner">
-        <a href="#hero">Главная</a>
-        <a href="#profile">О предприятии</a>
-        <a href="#services">Услуги</a>
-        <a href="#about">О компании</a>
-        <a href="#how-we-work">Как мы работаем</a>
-        <a href="#geography">География</a>
-        <a href="#contacts">Контакты/реквизиты</a>
+    <div class="premium-hero-content">
+      <span class="premium-kicker">Комплексные системы безопасности</span>
+      <h1>Более 30 лет защищаем объекты</h1>
+      <p>Проектируем, монтируем и обслуживаем системы видеонаблюдения, пожарной и охранной сигнализации, контроля доступа и периметровой охраны.</p>
+      <div class="premium-hero-buttons"><a href="#contacts" class="premium-btn">Получить консультацию</a><a href="#services" class="premium-btn premium-btn--ghost">Смотреть услуги</a></div>
+      <div class="premium-metrics">
+        <div class="premium-metric"><strong>с 1991 года</strong><span>на рынке систем безопасности</span></div>
+        <div class="premium-metric"><strong>10+ систем</strong><span>комплексные решения под ключ</span></div>
+        <div class="premium-metric"><strong>5 регионов</strong><span>Пенза и соседние области</span></div>
+        <div class="premium-metric"><strong>0 ₽ осмотр</strong><span>обследование объекта в Пензе и области</span></div>
       </div>
     </div>
   </div>
@@ -1272,29 +1266,6 @@
            MAIN CONTENT
       ========================================= -->
       <main class="main-content">
-
-        <!-- ======================================
-             HERO
-        ====================================== -->
-        <section id="hero" class="content-section">
-          <div class="content-section-title">Системы безопасности в Пензе и регионах</div>
-          <p class="hero-lead">ООО НПФ «Диполь-М» — профессиональная защита вашего объекта с 1991 года</p>
-          <p class="hero-desc">
-            Проектируем, монтируем и обслуживаем системы видеонаблюдения,
-            пожарной и охранной сигнализации, контроля доступа и периметровой охраны.
-            Работаем в Пензе, Пензенской и соседних областях.
-          </p>
-          <div class="hero-stats-row">
-            <div class="stat-badge"><span>33+</span>лет на рынке</div>
-            <div class="stat-badge"><span>10+</span>видов систем</div>
-            <div class="stat-badge"><span>5</span>регионов</div>
-            <div class="stat-badge"><span>0 ₽</span>предпроектное обследование</div>
-          </div>
-          <div class="hero-cta">
-            <a href="#contacts" class="btn">Бесплатное обследование объекта</a>
-            <a href="#services" class="btn btn-outline">Наши услуги</a>
-          </div>
-        </section>
 
         <!-- ======================================
              О ПРЕДПРИЯТИИ (moved here from below)
