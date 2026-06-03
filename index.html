@@ -3,1873 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ООО НПФ «Диполь-М» — монтаж и обслуживание систем видеонаблюдения, охранной и пожарной сигнализации, контроля доступа в Пензе и области с 1991 года." />
-  <title>Диполь-М — Системы безопасности в Пензе</title>
+  <meta name="description" content="ООО НПФ «Диполь-М»: проектирование, монтаж и обслуживание систем видеонаблюдения, охранной и пожарной сигнализации, контроля доступа и периметровой охраны в Пензе, Пензенской области и по России." />
+  <meta property="og:title" content="Диполь-М — системы безопасности в Пензе" />
+  <meta property="og:description" content="Проектирование, монтаж и обслуживание систем безопасности для объектов любой сложности. Работаем с 1991 года." />
+  <meta property="og:type" content="website" />
+  <title>Диполь-М — системы безопасности в Пензе с 1991 года</title>
   <style>
-    /* =============================================
-       RESET & BASE
-    ============================================= */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-      color: #2d3748;
-      background: #eef2f7;
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    a {
-      color: #1a56db;
-      text-decoration: none;
-      transition: color 0.18s;
-    }
-
-    a:hover {
-      color: #1040a8;
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 18px;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #1a2e4a;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.08rem;
-      font-weight: 700;
-      color: #1a2e4a;
-      margin-bottom: 8px;
-    }
-
-    p {
-      margin-bottom: 10px;
-      line-height: 1.65;
-    }
-
-    /* =============================================
-       LAYOUT CONTAINERS
-    ============================================= */
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 14px;
-    }
-
-    /* =============================================
-       HEADER — TOP BANNER + NAV BAR
-    ============================================= */
-    .site-header-top {
-      background: linear-gradient(135deg, #1a2e4a 0%, #1e4080 100%);
-      padding: 12px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-
-    .header-top-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .logo-block {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-    }
-
-    .logo-icon {
-      width: 44px;
-      height: 44px;
-      background: rgba(255,255,255,0.15);
-      border: 2px solid rgba(255,255,255,0.3);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      font-weight: 900;
-      color: #fff;
-      flex-shrink: 0;
-    }
-
-    .logo-text {
-      color: #fff;
-      font-size: 1.55rem;
-      font-weight: 700;
-      letter-spacing: 0.3px;
-    }
-
-    .logo-text span {
-      color: #90c4f9;
-    }
-
-    .logo-sub {
-      color: rgba(255,255,255,0.6);
-      font-size: 0.76rem;
-      margin-top: 2px;
-    }
-
-    .header-phone-block {
-      text-align: right;
-    }
-
-    .header-phone-block a {
-      color: #fff;
-      font-size: 1.15rem;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .header-phone-block a:hover {
-      color: #90c4f9;
-      text-decoration: none;
-    }
-
-    .header-phone-block .phone-label {
-      display: block;
-      color: rgba(255,255,255,0.55);
-      font-size: 0.73rem;
-      margin-bottom: 3px;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
-
-    .header-phone-block .fax-line {
-      display: block;
-      color: rgba(255,255,255,0.55);
-      font-size: 0.73rem;
-      margin-top: 2px;
-    }
-
-    /* Navigation bar */
-    .site-header-nav {
-      background: #1e4080;
-      border-bottom: 1px solid rgba(0,0,0,0.15);
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    }
-
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .site-header-nav a {
-      color: rgba(255,255,255,0.82);
-      padding: 9px 15px;
-      font-size: 0.86rem;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.18s, color 0.18s;
-    }
-
-    .site-header-nav a:hover {
-      background: rgba(255,255,255,0.12);
-      color: #fff;
-      text-decoration: none;
-    }
-
-    /* Mobile burger */
-    .burger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 4px;
-    }
-
-    .burger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: #fff;
-      border-radius: 2px;
-    }
-
-    /* =============================================
-       3-COLUMN PAGE LAYOUT
-    ============================================= */
-    .page-body {
-      background: #eef2f7;
-      padding: 16px 0 28px;
-    }
-
-    .page-columns {
-      display: grid;
-      grid-template-columns: 200px 1fr 210px;
-      gap: 14px;
-      align-items: start;
-    }
-
-    /* =============================================
-       LEFT SIDEBAR
-    ============================================= */
-    .sidebar-left {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .sidebar-box {
-      background: #fff;
-      border: 1px solid #dde5ef;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-    }
-
-    .sidebar-box-title {
-      background: #1e4080;
-      color: #fff;
-      font-size: 0.83rem;
-      font-weight: 700;
-      padding: 8px 12px;
-      letter-spacing: 0.2px;
-    }
-
-    .sidebar-box-body {
-      padding: 10px 12px;
-    }
-
-    .sidebar-nav-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .sidebar-nav-list li {
-      border-bottom: 1px solid #eef2f7;
-    }
-
-    .sidebar-nav-list li:last-child {
-      border-bottom: none;
-    }
-
-    .sidebar-nav-list a {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 7px 4px;
-      color: #1a56db;
-      font-size: 0.84rem;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background 0.15s, color 0.15s;
-    }
-
-    .sidebar-nav-list a:hover {
-      background: #eef4ff;
-      color: #1040a8;
-      text-decoration: none;
-    }
-
-    .sidebar-nav-list a::before {
-      content: '›';
-      color: #1a56db;
-      font-size: 1rem;
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-
-    /* =============================================
-       MAIN CONTENT
-    ============================================= */
-    .main-content {
-      background: #fff;
-      border: 1px solid #dde5ef;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-    }
-
-    .content-section {
-      padding: 20px 24px;
-      border-bottom: 1px solid #eef2f7;
-    }
-
-    .content-section:last-child {
-      border-bottom: none;
-    }
-
-    .content-section-title {
-      font-size: 1.22rem;
-      font-weight: 700;
-      color: #1a2e4a;
-      padding-bottom: 10px;
-      margin-bottom: 16px;
-      border-bottom: 3px solid #1e4080;
-    }
-
-    /* =============================================
-       HERO (top section)
-    ============================================= */
-    .hero-lead {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #1a2e4a;
-      margin-bottom: 8px;
-    }
-
-    .hero-desc {
-      color: #4a5568;
-      margin-bottom: 14px;
-      line-height: 1.7;
-    }
-
-    .hero-stats-row {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-
-    .stat-badge {
-      background: #f0f5ff;
-      border: 1px solid #bcd0f7;
-      border-radius: 8px;
-      padding: 10px 12px;
-      font-size: 0.8rem;
-      color: #2d3748;
-      font-weight: 600;
-      text-align: center;
-    }
-
-    .stat-badge span {
-      display: block;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #1a56db;
-      margin-bottom: 2px;
-    }
-
-    .hero-cta {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 4px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 9px 20px;
-      font-size: 0.9rem;
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
-      background: #1a56db;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.18s;
-    }
-
-    .btn:hover {
-      background: #1040a8;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .btn-outline {
-      background: #fff;
-      color: #1a56db;
-      border: 2px solid #1a56db;
-    }
-
-    .btn-outline:hover {
-      background: #eef4ff;
-      color: #1040a8;
-      border-color: #1040a8;
-      text-decoration: none;
-    }
-
-    .btn-orange {
-      background: #e55a10;
-      color: #fff;
-      border: none;
-    }
-
-    .btn-orange:hover {
-      background: #c44c0c;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    /* =============================================
-       PROFILE (О предприятии)
-    ============================================= */
-    .profile-desc {
-      color: #4a5568;
-      margin-bottom: 10px;
-      line-height: 1.7;
-    }
-
-    .profile-highlights-list {
-      list-style: none;
-      padding: 0;
-      margin: 14px 0;
-    }
-
-    .profile-highlights-list li {
-      padding: 8px 0 8px 22px;
-      border-bottom: 1px solid #eef2f7;
-      position: relative;
-      font-size: 0.9rem;
-      color: #4a5568;
-    }
-
-    .profile-highlights-list li:last-child {
-      border-bottom: none;
-    }
-
-    .profile-highlights-list li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: #1a56db;
-      font-weight: 700;
-    }
-
-    .partner-box {
-      background: #f7f9ff;
-      border: 1px solid #bcd0f7;
-      border-radius: 6px;
-      padding: 14px 16px;
-      margin: 14px 0;
-    }
-
-    .partner-box h3 {
-      font-size: 0.97rem;
-      margin-bottom: 10px;
-      color: #1a2e4a;
-    }
-
-    .partner-box ul {
-      margin: 0;
-      padding-left: 18px;
-    }
-
-    .partner-box li {
-      font-size: 0.88rem;
-      color: #4a5568;
-      margin-bottom: 5px;
-    }
-
-    /* Clients block */
-    .clients-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 12px;
-    }
-
-    .clients-badge {
-      background: #f0f5ff;
-      border: 1px solid #bcd0f7;
-      color: #1a56db;
-      font-size: 0.78rem;
-      font-weight: 700;
-      padding: 3px 12px;
-      border-radius: 20px;
-    }
-
-    .clients-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      columns: 2;
-      column-gap: 20px;
-    }
-
-    .clients-list li {
-      padding: 4px 0 4px 14px;
-      border-bottom: 1px solid #f0f3f8;
-      position: relative;
-      font-size: 0.83rem;
-      color: #4a5568;
-      break-inside: avoid;
-    }
-
-    .clients-list li::before {
-      content: '—';
-      position: absolute;
-      left: 0;
-      color: #7ba7e0;
-      font-size: 0.75rem;
-    }
-
-    .clients-note {
-      margin-top: 14px;
-      padding-top: 12px;
-      border-top: 1px solid #eef2f7;
-      font-style: italic;
-      font-size: 0.87rem;
-      color: #718096;
-    }
-
-    /* =============================================
-       SERVICES
-    ============================================= */
-    .services-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .service-item {
-      padding: 12px 0;
-      border-bottom: 1px solid #eef2f7;
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-
-    .service-item:last-child {
-      border-bottom: none;
-    }
-
-    .service-item-icon {
-      font-size: 1.4rem;
-      flex-shrink: 0;
-      width: 32px;
-      text-align: center;
-    }
-
-    .service-item-body h4 {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #1a2e4a;
-      margin-bottom: 4px;
-    }
-
-    .service-item-body p {
-      font-size: 0.86rem;
-      color: #718096;
-      margin: 0 0 5px;
-      line-height: 1.55;
-    }
-
-    .service-item-body a {
-      font-size: 0.82rem;
-      color: #1a56db;
-      font-weight: 600;
-    }
-
-    /* =============================================
-       ABOUT / WHY US
-    ============================================= */
-    .about-text {
-      color: #4a5568;
-    }
-
-    .about-text strong {
-      color: #1a2e4a;
-    }
-
-    .about-tags-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin: 12px 0;
-    }
-
-    .tag-item {
-      background: #f0f5ff;
-      border: 1px solid #bcd0f7;
-      border-radius: 20px;
-      padding: 3px 12px;
-      font-size: 0.8rem;
-      color: #1a2e4a;
-    }
-
-    .features-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 14px;
-    }
-
-    .features-table td {
-      padding: 10px 12px;
-      border: 1px solid #eef2f7;
-      vertical-align: top;
-      font-size: 0.87rem;
-      width: 50%;
-      background: #fafbfd;
-      border-radius: 4px;
-    }
-
-    .features-table td strong {
-      display: block;
-      color: #1a2e4a;
-      margin-bottom: 4px;
-    }
-
-    /* =============================================
-       HOW WE WORK
-    ============================================= */
-    .steps-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .step-item {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      padding: 12px 0;
-      border-bottom: 1px solid #eef2f7;
-    }
-
-    .step-item:last-child {
-      border-bottom: none;
-    }
-
-    .step-num {
-      width: 32px;
-      height: 32px;
-      background: #1a56db;
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      border-radius: 50%;
-    }
-
-    .step-body h4 {
-      font-size: 0.93rem;
-      font-weight: 700;
-      color: #1a2e4a;
-      margin-bottom: 3px;
-    }
-
-    .step-body p {
-      font-size: 0.86rem;
-      color: #718096;
-      margin: 0;
-    }
-
-    .step-free {
-      display: inline-block;
-      background: #f0f5ff;
-      border: 1px solid #bcd0f7;
-      font-size: 0.76rem;
-      font-weight: 700;
-      color: #1a56db;
-      padding: 2px 10px;
-      margin-top: 5px;
-      border-radius: 20px;
-    }
-
-    /* =============================================
-       GEOGRAPHY
-    ============================================= */
-    .regions-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      margin: 12px 0;
-    }
-
-    .region-badge {
-      background: #f0f5ff;
-      border: 1px solid #bcd0f7;
-      border-radius: 20px;
-      padding: 4px 14px;
-      font-size: 0.83rem;
-      color: #1a2e4a;
-    }
-
-    .region-badge.main {
-      background: #1a56db;
-      color: #fff;
-      border-color: #1040a8;
-    }
-
-    .geo-items {
-      margin-top: 14px;
-    }
-
-    .geo-item {
-      padding: 10px 0;
-      border-bottom: 1px solid #eef2f7;
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-    }
-
-    .geo-item:last-child {
-      border-bottom: none;
-    }
-
-    .geo-item-icon {
-      font-size: 1.15rem;
-      flex-shrink: 0;
-    }
-
-    .geo-item h4 {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: #1a2e4a;
-      margin-bottom: 2px;
-    }
-
-    .geo-item p {
-      font-size: 0.84rem;
-      color: #718096;
-      margin: 0;
-    }
-
-    /* =============================================
-       CONTACTS SECTION
-    ============================================= */
-    .contacts-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      align-items: start;
-    }
-
-    .contact-info-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .contact-info-list li {
-      padding: 8px 0;
-      border-bottom: 1px solid #eef2f7;
-      font-size: 0.9rem;
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-    }
-
-    .contact-info-list li:last-child {
-      border-bottom: none;
-    }
-
-    .ci-icon {
-      font-size: 1rem;
-      flex-shrink: 0;
-      width: 22px;
-    }
-
-    .ci-body strong {
-      display: block;
-      font-size: 0.74rem;
-      text-transform: uppercase;
-      color: #a0aec0;
-      letter-spacing: 0.4px;
-      margin-bottom: 2px;
-    }
-
-    .cta-panel {
-      background: linear-gradient(135deg, #1a2e4a 0%, #1e4080 100%);
-      padding: 20px 22px;
-      border-radius: 8px;
-    }
-
-    .cta-panel h3 {
-      color: #fff;
-      font-size: 1.05rem;
-      margin-bottom: 10px;
-    }
-
-    .cta-panel p {
-      color: rgba(255,255,255,0.72);
-      font-size: 0.88rem;
-      margin-bottom: 16px;
-      line-height: 1.6;
-    }
-
-    .cta-panel .btn {
-      display: block;
-      text-align: center;
-      background: #2979ff;
-      width: 100%;
-      padding: 11px 20px;
-    }
-
-    .cta-panel .btn:hover {
-      background: #1a56db;
-    }
-
-    .cta-note {
-      font-size: 0.76rem;
-      color: rgba(255,255,255,0.45);
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    /* =============================================
-       RIGHT SIDEBAR
-    ============================================= */
-    .sidebar-right {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .sb-contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      padding: 6px 0;
-      border-bottom: 1px solid #eef2f7;
-      font-size: 0.84rem;
-    }
-
-    .sb-contact-item:last-child {
-      border-bottom: none;
-    }
-
-    .sb-contact-item .ci-icon {
-      font-size: 0.95rem;
-    }
-
-    .sb-contact-item strong {
-      display: block;
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      color: #a0aec0;
-      letter-spacing: 0.3px;
-    }
-
-    .sb-phone {
-      color: #1a56db;
-      font-weight: 700;
-      font-size: 0.93rem;
-    }
-
-    .offer-sb-card {
-      background: #f7f9ff;
-      border: 1px solid #bcd0f7;
-      border-top: 3px solid #1a56db;
-      border-radius: 0 0 6px 6px;
-      padding: 12px 13px;
-      margin-bottom: 10px;
-    }
-
-    .offer-sb-card:last-child {
-      margin-bottom: 0;
-    }
-
-    .offer-sb-icon {
-      font-size: 1.6rem;
-      margin-bottom: 6px;
-    }
-
-    .offer-sb-card h4 {
-      font-size: 0.87rem;
-      font-weight: 700;
-      color: #1a2e4a;
-      margin-bottom: 5px;
-      line-height: 1.35;
-    }
-
-    .offer-sb-card p {
-      font-size: 0.79rem;
-      color: #718096;
-      margin-bottom: 7px;
-      line-height: 1.45;
-    }
-
-    .offer-sb-price {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #e55a10;
-      display: block;
-      margin-bottom: 9px;
-    }
-
-    .offer-sb-card .btn-orange {
-      display: block;
-      text-align: center;
-      padding: 7px 10px;
-      font-size: 0.84rem;
-    }
-
-    /* =============================================
-       FOOTER
-    ============================================= */
-    footer {
-      background: #1a2e4a;
-      padding: 18px 0;
-      border-top: 3px solid #1e4080;
-    }
-
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .footer-logo {
-      color: #fff;
-      font-size: 1.05rem;
-      font-weight: 700;
-    }
-
-    .footer-logo span {
-      color: #90c4f9;
-    }
-
-    .footer-info {
-      color: rgba(255,255,255,0.4);
-      font-size: 0.77rem;
-      text-align: center;
-      line-height: 1.6;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 16px;
-    }
-
-    .footer-links a {
-      color: rgba(255,255,255,0.5);
-      font-size: 0.77rem;
-    }
-
-    .footer-links a:hover {
-      color: #90c4f9;
-      text-decoration: none;
-    }
-
-    /* =============================================
-       MOBILE NAV OVERLAY
-    ============================================= */
-    .nav-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: #1a2e4a;
-      z-index: 999;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      padding: 20px;
-    }
-
-    .nav-overlay.open {
-      display: flex;
-    }
-
-    .nav-overlay a {
-      color: #fff;
-      font-size: 1.1rem;
-      font-weight: 600;
-      padding: 8px 22px;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-
-    .nav-overlay a:hover {
-      background: rgba(255,255,255,0.1);
-      color: #90c4f9;
-      text-decoration: none;
-    }
-
-    .nav-close {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 1.6rem;
-      cursor: pointer;
-    }
-
-    /* =============================================
-       RESPONSIVE
-    ============================================= */
-
-    /* Tablet: hide left sidebar, keep right sidebar */
-    @media (max-width: 920px) {
-      .page-columns {
-        grid-template-columns: 1fr 210px;
-      }
-
-      .sidebar-left {
-        display: none;
-      }
-
-      .site-header-nav .nav-inner {
-        display: none;
-      }
-
-      .burger {
-        display: flex;
-      }
-    }
-
-    /* Small tablet / large phone: single column */
-    @media (max-width: 640px) {
-      .page-columns {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar-right {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-      }
-
-      .hero-stats-row {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .hero-cta {
-        flex-direction: column;
-      }
-
-      .hero-cta .btn {
-        text-align: center;
-      }
-
-      .contacts-inner {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-
-      .clients-list {
-        columns: 1;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .features-table,
-      .features-table tbody,
-      .features-table tr,
-      .features-table td {
-        display: block;
-        width: 100%;
-      }
-
-      .footer-links {
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 400px) {
-      .hero-stats-row {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .sidebar-right {
-        grid-template-columns: 1fr;
-      }
-    }
-  /* Gallery Slider */
-  .gallery-slider {
-    margin-top: 24px;
-    padding-top: 20px;
-    border-top: 1px solid #eef2f7;
-  }
-  .gallery-slider .gallery-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1a2e4a;
-    margin-bottom: 14px;
-  }
-  .gallery-slider .slider-wrapper {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    background: #f0f3f8;
-    border: 1px solid #dde5ef;
-  }
-  .gallery-slider .slider-track {
-    display: flex;
-    transition: transform 0.45s ease;
-  }
-  .gallery-slider .slide {
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-  }
-  .gallery-slider .slide img {
-    max-height: 400px;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  .gallery-slider .slide-caption {
-    margin-top: 12px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #1a2e4a;
-    text-align: center;
-  }
-  .gallery-slider .slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: rgba(30, 64, 128, 0.85);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    transition: background 0.2s;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-  .gallery-slider .slider-btn:hover {
-    background: rgba(26, 86, 219, 1);
-  }
-  .gallery-slider .slider-btn-prev { left: 10px; }
-  .gallery-slider .slider-btn-next { right: 10px; }
-  .gallery-slider .slider-counter {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 0.82rem;
-    color: #718096;
-  }
-  
-/* ===== PREMIUM HEADER + HERO OVERRIDE ===== */
-body { background:#eef3f8; }
-.site-header-top,.site-header-nav{display:none;}
-.premium-hero{position:relative;min-height:620px;padding:22px 0 54px;color:#fff;background:linear-gradient(90deg,rgba(5,16,31,.94) 0%,rgba(5,16,31,.86) 38%,rgba(5,16,31,.50) 66%,rgba(5,16,31,.20) 100%),url("dipol.png") center right/cover no-repeat;overflow:hidden;}
-.premium-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 28%,rgba(65,151,255,.16),transparent 28%);pointer-events:none;}
-.premium-shell{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:0 18px;}
-.premium-header{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px;min-height:72px;padding:12px 16px;border:1px solid rgba(255,255,255,.18);border-radius:22px;background:rgba(7,20,35,.56);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 18px 50px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.12);}
-.premium-logo{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;white-space:nowrap;}
-.premium-logo:hover{color:#fff;text-decoration:none;}
-.premium-logo-mark{width:44px;height:44px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff,#dbeaff);color:#061321;font-weight:900;font-size:20px;box-shadow:0 10px 24px rgba(0,0,0,.22);}
-.premium-logo strong{display:block;font-size:17px;line-height:1.05;letter-spacing:.01em;}
-.premium-logo small{display:block;margin-top:4px;color:rgba(255,255,255,.68);font-size:12px;}
-.premium-nav{display:flex;align-items:center;justify-content:center;gap:22px;min-width:0;}
-.premium-nav a{color:rgba(255,255,255,.82);font-weight:650;font-size:14px;text-decoration:none;white-space:nowrap;}
-.premium-nav a:hover{color:#fff;text-decoration:none;}
-.premium-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;white-space:nowrap;}
-.premium-phone{color:#fff;font-weight:800;font-size:14px;text-decoration:none;}
-.premium-phone:hover{color:#fff;text-decoration:none;}
-.premium-consult{display:none;}
-.premium-burger{display:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:rgba(255,255,255,.08);cursor:pointer;}
-.premium-burger span{display:block;width:20px;height:2px;margin:4px auto;background:#fff;border-radius:2px;}
-.premium-hero-content{max-width:650px;padding-top:104px;}
-.premium-kicker{display:inline-flex;margin-bottom:18px;color:#8fc6ff;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;}
-.premium-hero h1{margin:0 0 20px;color:#fff;font-size:clamp(42px,7vw,70px);line-height:1.04;font-weight:900;letter-spacing:-.045em;}
-.premium-hero p{max-width:590px;margin:0 0 28px;color:rgba(255,255,255,.86);font-size:19px;line-height:1.58;}
-.premium-hero-buttons{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:42px;}
-.premium-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:14px;font-size:15px;font-weight:800;text-decoration:none;color:#fff;background:linear-gradient(180deg,#1f7aff,#0c55d9);box-shadow:0 16px 34px rgba(15,92,220,.35);}
-.premium-btn:hover{color:#fff;text-decoration:none;}
-.premium-btn--ghost{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.28);box-shadow:none;}
-.premium-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
-.premium-metric{min-height:94px;padding:16px 18px;border-radius:18px;border:1px solid rgba(255,255,255,.22);background:rgba(7,20,35,.46);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);}
-.premium-metric strong{display:block;color:#fff;font-size:21px;line-height:1.15;margin-bottom:7px;}
-.premium-metric span{color:rgba(255,255,255,.72);font-size:13px;line-height:1.4;}
-.page-body{padding-top:32px;}
-@media(max-width:1080px){.premium-header{grid-template-columns:auto auto;}.premium-nav,.premium-phone,.premium-consult{display:none;}.premium-actions{justify-content:flex-end;}.premium-burger{display:block;}.premium-hero-content{padding-top:82px;}.premium-metrics{grid-template-columns:repeat(2,minmax(0,1fr));}}
-@media(max-width:640px){.premium-hero{min-height:auto;padding:14px 0 36px;background:linear-gradient(180deg,rgba(5,16,31,.94),rgba(5,16,31,.75)),url("dipol.png") center/cover no-repeat;}.premium-header{min-height:64px;padding:10px 12px;border-radius:18px;}.premium-logo-mark{width:42px;height:42px;border-radius:14px;}.premium-logo small{display:none;}.premium-hero-content{padding-top:60px;}.premium-hero p{font-size:16px;}.premium-hero-buttons{margin-bottom:28px;}.premium-btn{width:100%;}.premium-metrics{grid-template-columns:1fr 1fr;gap:10px;}.premium-metric{min-height:84px;padding:14px;}.premium-metric strong{font-size:18px;}}
-
-</style>
+    :root {
+      --navy:#071527;--navy-2:#0c2440;--blue:#1d5fd1;--blue-2:#2f80ed;--sky:#dcecff;--text:#172033;--muted:#64748b;--line:#d9e3f0;--bg:#f3f7fb;--white:#fff;--shadow:0 20px 60px rgba(7,21,39,.12);--radius:24px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1180px,calc(100% - 32px));margin:0 auto}
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(217,227,240,.8)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;min-width:220px}
+    .brand-mark{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-weight:900;font-size:22px;box-shadow:0 10px 26px rgba(29,95,209,.22)}
+    .brand-name{font-size:22px;font-weight:900;letter-spacing:-.03em;color:var(--navy)}
+    .brand-sub{font-size:12px;color:var(--muted);margin-top:-3px}
+    .menu{display:flex;align-items:center;gap:18px;font-size:14px;font-weight:700;color:#334155}
+    .menu a:hover{color:var(--blue)}
+    .header-actions{display:flex;align-items:center;gap:12px}
+    .phone{font-weight:900;color:var(--navy);white-space:nowrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:13px 20px;font-weight:850;border:1px solid transparent;cursor:pointer;transition:.2s;background:var(--blue);color:#fff;box-shadow:0 12px 26px rgba(29,95,209,.22)}
+    .btn:hover{transform:translateY(-1px);background:#164fb1;text-decoration:none}
+    .btn.secondary{background:#fff;color:var(--navy);border-color:rgba(255,255,255,.32);box-shadow:none}
+    .btn.outline{background:#fff;color:var(--blue);border-color:#b9d3f5;box-shadow:none}
+    .burger{display:none;background:var(--navy);color:#fff;border:0;border-radius:12px;width:44px;height:44px;font-size:22px}
+    .mobile-panel{display:none;position:fixed;inset:76px 0 auto 0;background:#fff;border-bottom:1px solid var(--line);padding:18px 24px;box-shadow:var(--shadow);z-index:49}
+    .mobile-panel.open{display:block}
+    .mobile-panel a{display:block;padding:12px 0;font-weight:800;color:var(--navy);border-bottom:1px solid #edf2f7}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 76% 18%,rgba(47,128,237,.45),transparent 28%),linear-gradient(135deg,#071527 0%,#0c2440 58%,#123b6d 100%);color:#fff}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,21,39,.92),rgba(7,21,39,.65)),url("Бизнес-центр «Плаза», г. Пенза.webp") center/cover;opacity:.38}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:center;padding:88px 0 76px}
+    .kicker{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.08);color:#cfe4ff;font-size:13px;font-weight:800;margin-bottom:22px}
+    h1{font-size:clamp(38px,5vw,66px);line-height:.98;letter-spacing:-.055em;margin-bottom:22px}
+    .hero-text{font-size:18px;color:#d9e7f8;max-width:760px;margin-bottom:28px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .trust-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:28px;box-shadow:0 24px 80px rgba(0,0,0,.25);backdrop-filter:blur(14px)}
+    .trust-card h3{font-size:22px;margin-bottom:18px}
+    .check-list{list-style:none;display:grid;gap:14px}
+    .check-list li{display:flex;gap:10px;color:#e6f0ff}
+    .check-list li:before{content:"✓";display:grid;place-items:center;min-width:24px;height:24px;border-radius:50%;background:rgba(47,128,237,.22);color:#9dccff;font-weight:900}
+    .stats{margin-top:-34px;position:relative;z-index:3}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .stat{padding:20px;border-radius:18px;background:linear-gradient(180deg,#f8fbff,#eef5ff)}
+    .stat strong{display:block;font-size:34px;line-height:1;color:var(--blue);letter-spacing:-.04em}
+    .stat span{font-size:14px;color:var(--muted);font-weight:800}
+    section{padding:74px 0}
+    .section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:30px}
+    .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);font-weight:900;margin-bottom:8px}
+    h2{font-size:clamp(28px,3vw,44px);line-height:1.08;letter-spacing:-.04em;color:var(--navy)}
+    .lead{font-size:17px;color:var(--muted);max-width:760px}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .about-text p{margin-bottom:14px;color:#475569}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 10px 30px rgba(7,21,39,.06)}
+    .card .icon{font-size:28px;margin-bottom:12px}
+    .card h3{font-size:18px;margin-bottom:8px;color:var(--navy)}
+    .card p{color:var(--muted);font-size:15px}
+    .services{background:#fff}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service-card{border:1px solid var(--line);border-radius:24px;padding:26px;background:linear-gradient(180deg,#fff,#f8fbff);display:flex;flex-direction:column;min-height:260px}
+    .service-card h3{font-size:20px;color:var(--navy);margin:12px 0 10px}
+    .service-card p{color:var(--muted);font-size:15px;flex:1}
+    .service-card a{margin-top:18px;color:var(--blue);font-weight:900}
+    .object-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .object-item{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;font-weight:850;color:#24364f}
+    .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .step{position:relative;background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 10px 30px rgba(7,21,39,.06)}
+    .step-num{width:42px;height:42px;border-radius:14px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900;margin-bottom:18px}
+    .step h3{font-size:18px;color:var(--navy);margin-bottom:8px}
+    .step p{font-size:14px;color:var(--muted)}
+    .gallery{background:#fff}
+    .slider{position:relative;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:#eef4fb;box-shadow:var(--shadow)}
+    .slider-track{display:flex;transition:transform .42s ease}
+    .slide{min-width:100%;height:560px;position:relative;background:#10233d;display:flex;align-items:center;justify-content:center}
+    .slide img{width:100%;height:100%;object-fit:cover}
+    .slide-caption{position:absolute;left:24px;right:24px;bottom:24px;padding:14px 18px;border-radius:16px;background:rgba(7,21,39,.72);color:#fff;font-weight:850;backdrop-filter:blur(10px)}
+    .slider-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:46px;height:46px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:var(--navy);font-size:26px;font-weight:900;cursor:pointer}
+    .slider-btn.prev{left:18px}.slider-btn.next{right:18px}
+    .counter{text-align:center;color:var(--muted);font-weight:800;margin-top:14px}
+    .geo-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+    .geo-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .badge{padding:10px 14px;border-radius:999px;background:#eaf3ff;color:#12447d;font-weight:850}
+    .trust-section{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff}
+    .trust-section h2{color:#fff}
+    .trust-section .lead{color:#c8d8ec}
+    .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .trust-item{border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.06);border-radius:22px;padding:24px}
+    .trust-item h3{margin-bottom:8px}
+    .trust-item p{color:#cbd8e8}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .contact-list{list-style:none;display:grid;gap:14px;margin-top:18px}
+    .contact-list li{padding:16px;border-radius:16px;background:#f7fbff;border:1px solid var(--line)}
+    .contact-list strong{display:block;color:var(--navy)}
+    .footer{background:#061120;color:#9db0c8;padding:28px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
+    .footer strong{color:#fff}
+    @media(max-width:1024px){.menu,.phone,.header-actions .btn{display:none}.burger{display:block}.hero-grid,.about-grid,.geo-grid,.contact-grid{grid-template-columns:1fr}.cards,.object-grid{grid-template-columns:repeat(2,1fr)}.service-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.container{width:min(100% - 24px,1180px)}.nav{height:68px}.mobile-panel{inset:68px 0 auto 0}.hero-grid{padding:58px 0}.hero-actions .btn{width:100%}.stats-grid,.cards,.service-grid,.object-grid,.steps,.trust-grid{grid-template-columns:1fr}section{padding:52px 0}.panel{padding:22px}.slide{height:360px}.section-head{display:block}}
+  </style>
 </head>
 <body>
-
-<!-- =============================================
-     MOBILE NAV OVERLAY
-============================================= -->
-<div class="nav-overlay" id="navOverlay" role="dialog" aria-label="Навигация">
-  <button class="nav-close" onclick="closeNav()" aria-label="Закрыть меню">✕</button>
-  <a href="#hero" onclick="closeNav()">Главная</a>
-  <a href="#profile" onclick="closeNav()">О предприятии</a>
-  <a href="#services" onclick="closeNav()">Услуги</a>
-  <a href="#about" onclick="closeNav()">О компании</a>
-  <a href="#how-we-work" onclick="closeNav()">Как мы работаем</a>
-  <a href="#geography" onclick="closeNav()">География</a>
-  <a href="#contacts" onclick="closeNav()">Контакты</a>
-  <a href="tel:89270942331" style="margin-top:8px; background:#2d4e76; padding:10px 24px;">📞 Позвонить</a>
-</div>
-
-<!-- =============================================
-     PREMIUM HEADER + HERO
-============================================= -->
-<header class="premium-hero" id="hero">
-  <div class="premium-shell">
-    <div class="premium-header">
-      <a href="#hero" class="premium-logo">
-        <span class="premium-logo-mark">Д</span>
-        <span><strong>Диполь-М</strong><small>Системы безопасности с 1991 года</small></span>
-      </a>
-      <nav class="premium-nav" aria-label="Основная навигация">
-        <a href="#profile">О компании</a>
-        <a href="#services">Услуги</a>
-        <a href="#profile">Объекты</a>
-        <a href="#how-we-work">Как работаем</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-      <div class="premium-actions">
-        <a class="premium-phone" href="tel:89270942331">8-927-094-23-31</a>
-        <a class="premium-consult" href="#contacts">Получить консультацию</a>
-        <button class="premium-burger" onclick="openNav()" aria-label="Открыть меню" aria-expanded="false" id="burgerBtn"><span></span><span></span><span></span></button>
-      </div>
-    </div>
-    <div class="premium-hero-content">
-      <span class="premium-kicker">Комплексные системы безопасности</span>
-      <h1>Более 30 лет защищаем объекты</h1>
-      <p>Проектируем, монтируем и обслуживаем системы видеонаблюдения, пожарной и охранной сигнализации, контроля доступа и периметровой охраны.</p>
-      <div class="premium-hero-buttons"><a href="#contacts" class="premium-btn">Получить консультацию</a><a href="#services" class="premium-btn premium-btn--ghost">Смотреть услуги</a></div>
-      <div class="premium-metrics">
-        <div class="premium-metric"><strong>с 1991 года</strong><span>на рынке систем безопасности</span></div>
-        <div class="premium-metric"><strong>10+ систем</strong><span>комплексные решения под ключ</span></div>
-        <div class="premium-metric"><strong>5 регионов</strong><span>Пенза и соседние области</span></div>
-        <div class="premium-metric"><strong>0 ₽ осмотр</strong><span>обследование объекта в Пензе и области</span></div>
-      </div>
-    </div>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Диполь-М">
+      <div class="brand-mark">Д</div><div><div class="brand-name">Диполь-М</div><div class="brand-sub">Системы безопасности с 1991 года</div></div>
+    </a>
+    <nav class="menu" aria-label="Основная навигация">
+      <a href="#about">О компании</a><a href="#services">Услуги</a><a href="#objects">Объекты</a><a href="#work">Как работаем</a><a href="#geo">География</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-actions"><a class="phone" href="tel:89270942331">8-927-094-23-31</a><a class="btn" href="#contacts">Получить консультацию</a></div>
+    <button class="burger" id="burger" aria-label="Открыть меню">☰</button>
   </div>
 </header>
-
-<!-- =============================================
-     3-COLUMN PAGE BODY
-============================================= -->
-<div class="page-body">
-  <div class="wrap">
-    <div class="page-columns">
-
-      <!-- =========================================
-           LEFT SIDEBAR
-      ========================================= -->
-      <aside class="sidebar-left">
-
-        <div class="sidebar-box">
-          <div class="sidebar-box-title">Разделы сайта</div>
-          <div class="sidebar-box-body">
-            <ul class="sidebar-nav-list">
-              <li><a href="#hero">Главная</a></li>
-              <li><a href="#profile">О предприятии</a></li>
-              <li><a href="#services">Видеонаблюдение</a></li>
-              <li><a href="#services">Охранная сигнализация</a></li>
-              <li><a href="#services">Пожарная сигнализация</a></li>
-              <li><a href="#services">Контроль доступа</a></li>
-              <li><a href="#services">Заграждения</a></li>
-              <li><a href="#how-we-work">Как мы работаем</a></li>
-              <li><a href="#geography">География</a></li>
-              <li><a href="#contacts">Контакты/реквизиты</a></li>
-            </ul>
-          </div>
-        </div>
-
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#about">О компании</a><a href="#services">Услуги</a><a href="#objects">Объекты</a><a href="#work">Как работаем</a><a href="#geo">География</a><a href="#contacts">Контакты</a><a href="tel:89270942331">Позвонить: 8-927-094-23-31</a>
+</div>
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker">ООО НПФ «Диполь-М» · с 1991 года</div>
+        <h1>Комплексные системы безопасности для объектов любой сложности</h1>
+        <p class="hero-text">Проектирование, монтаж, пусконаладка и обслуживание систем видеонаблюдения, охранной и пожарной сигнализации, контроля доступа и периметровой охраны в Пензе, Пензенской области и по России.</p>
+        <div class="hero-actions"><a class="btn" href="#contacts">Получить консультацию</a><a class="btn secondary" href="#services">Смотреть услуги</a></div>
+      </div>
+      <aside class="trust-card">
+        <h3>Инженерная защита под ключ</h3>
+        <ul class="check-list">
+          <li>Работаем с 1991 года</li><li>Собственная производственная база</li><li>Опыт объектов МВД, ФСБ, АЭС и социальной инфраструктуры</li><li>Монтаж и обслуживание под ключ</li><li>Пенза, область и вся Россия</li>
+        </ul>
       </aside>
-
-      <!-- =========================================
-           MAIN CONTENT
-      ========================================= -->
-      <main class="main-content">
-
-        <!-- ======================================
-             О ПРЕДПРИЯТИИ (moved here from below)
-        ====================================== -->
-        <section id="profile" class="content-section">
-          <div class="content-section-title">О предприятии</div>
-          <p class="profile-desc">
-            ООО НПФ «Диполь-М» предлагает услуги в области продажи, монтажа и пусконаладки систем
-            пожарной и охранной сигнализации, периметровых средств охраны, систем видеонаблюдения,
-            систем ограничения доступа, заборов, инженерных заграждений, технических средств обеспечения
-            безопасности и средств коммуникации и связи.
-          </p>
-          <p class="profile-desc">
-            Монтаж и пусконаладку производим в Пензе, Пензенской области (в том числе г. Заречный)
-            и на всей территории Российской Федерации.
-          </p>
-          <p class="profile-desc">
-            Предприятие «Диполь-М» создано в <strong>1991 году</strong> для проведения монтажных и пусконаладочных
-            работ систем технического обеспечения безопасности и связи, а также для их разработки,
-            производства и продажи.
-          </p>
-          <p class="profile-desc">
-            Предприятие располагает собственной производственной базой, штатом высококвалифицированных
-            сотрудников и большим опытом работы в области технических средств обеспечения безопасности
-            и разработки систем видеонаблюдения и связи любой степени сложности.
-          </p>
-          <p class="profile-desc">
-            Особую эффективность при создании комплексных систем безопасности даёт возможность
-            использования приборов, оборудования и комплексов, разработанных и производимых
-            для оборудования объектов МВД, ФСБ, АЭС и защиты государственной границы.
-            Большое внимание уделяется внедрению новейших достижений науки и техники:
-            интеллектуальные компьютерные системы видеонаблюдения, новейшие средства охраны
-            периметра и многое другое.
-          </p>
-
-          <ul class="profile-highlights-list">
-            <li><strong>Собственная производственная база</strong> — позволяет выполнять работы любой сложности с высоким качеством по минимальным ценам</li>
-            <li><strong>Спецтехника для объектов МВД и ФСБ</strong> — применяем приборы и комплексы, разработанные для оборудования объектов МВД, ФСБ, АЭС и охраны государственной границы</li>
-            <li><strong>Индивидуальный подход</strong> — решаем задачи любой сложности с соблюдением полной конфиденциальности и персональным подбором оборудования</li>
-            <li><strong>Опыт работы с учреждениями образования</strong> — школы, колледжи, детские учреждения Пензенской области</li>
-          </ul>
-
-          <div class="partner-box">
-            <h3>Партнёрские услуги в области пожарной безопасности</h3>
-            <ul>
-              <li>Декларация пожарной безопасности — разработка и регистрация</li>
-              <li>Проведение независимой оценки рисков (аудита) в области пожарной безопасности</li>
-              <li>Расчёты по вычислению пожарного риска для любых объектов</li>
-            </ul>
-          </div>
-
-          <!-- Clients list -->
-          <div class="clients-header">
-            <h3 style="margin:0;">Объекты, на которых выполнялись работы</h3>
-            <span class="clients-badge">50+ организаций</span>
-          </div>
-          <ul class="clients-list">
-            <li>Пункты весового контроля Федеральной дирекции автодороги Москва–Самара (г. Рязань, г. Сызрань, р.п. Мокшан)</li>
-            <li>Комбикормовый з-д Каменского элеватора</li>
-            <li>Хлебозавод г. Стерлитамак</li>
-            <li>Нижнеломовский ликёро-водочный з-д</li>
-            <li>ООО «Респект», г. Нижний Ломов</li>
-            <li>ООО «Пензахлебопродукт», г. Пенза</li>
-            <li>Чаадаевское хлебоприёмное предприятие</li>
-            <li>Кададинский леспромхоз, Пензенская обл.</li>
-            <li>ООО «Магистраль», с. Чемодановка</li>
-            <li>Спичечная ф-ка «Победа», с. Верхний Ломов</li>
-            <li>ООО НПФ «Кристалл», г. Пенза</li>
-            <li>ОАО «Пензаспиртпром»</li>
-            <li>ООО «Политрон», г. Заречный</li>
-            <li>ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение</li>
-            <li>ЗАО «Регион»</li>
-            <li>Пензенское управление лесного хозяйства</li>
-            <li>Каменский ГРОВД</li>
-            <li>ООО «Пенза Алкопром»</li>
-            <li>Отдел образования Пензенского р-на</li>
-            <li>Детская школа искусств г. Заречного</li>
-            <li>ФГУП НТК «ПО Старт»</li>
-            <li>ООО «Пензенский Опткоопторг»</li>
-            <li>ЗАО «Пензанефтепродукт»</li>
-            <li>11 КПП г. Заречного</li>
-            <li>Кредитно-кассовый офис «Пенза-Центральный» ООО КБ «Ренессанс Капитал»</li>
-            <li>Плавательный бассейн г. М. Сердоба</li>
-            <li>ГОУ СПО «Мокшанский агротехнологический колледж»</li>
-            <li>Управление Росреестра по Пензенской области</li>
-            <li>Региональное управление № 59 ФМБА России</li>
-            <li>Сеть магазинов «Магнит», г. Заречный Пензенской области</li>
-            <li>ООО «Заря+»</li>
-            <li>Бар «Союз», г. Заречный</li>
-            <li>ООО «Слайс-Арт»</li>
-            <li>ОАО «Ульяновскнефть» УПН «Клин»</li>
-            <li>ОАО «Ульяновскнефть» УППН «Пензенская»</li>
-            <li>Тамалинская ЦРБ</li>
-            <li>Бизнес-центр «Плаза», г. Пенза</li>
-            <li>Здание прокуратуры Октябрьского района г. Пенза</li>
-            <li>Бар «1000 и 1 ночь», г. Пенза</li>
-            <li>Магазин «Строймаг», г. Пенза</li>
-            <li>ОАО Птицефабрика «Васильевская» (площадки Кутля, Восточная, МТФ), группа Черкизово</li>
-            <li>МБОУ СОШ г. Сурска</li>
-            <li>МБОУ ООШ г. Сурска им. В.В. Анисимова</li>
-            <li>ЗАО АПК «Нечаевский»</li>
-            <li>МБОУ НОШ г. Городище</li>
-            <li>МБОУ ООШ с. Павло-Куракино</li>
-            <li>Стадион г. Городище</li>
-            <li>МБОУ СОШ с. Канаевка</li>
-            <li>МОУ СОШ с. Названовка</li>
-            <li>МБОУ ООШ р.п. Чаадаевка</li>
-            <li>МОУ СОШ с. Старая Потловка</li>
-            <li>МОУ СОШ №1 им. А.С. Пушкина р.п. Колышлей</li>
-            <li>и многие другие объекты</li>
-          </ul>
-          <p class="clients-note">
-            Отличительная особенность предприятия — индивидуальный подход при решении конкретной задачи
-            и полная конфиденциальность при проведении работ.
-          </p>
-          <div class="gallery-slider">
-            <div class="gallery-title">📷 Фотографии объектов</div>
-            <div class="slider-wrapper" id="gallerySlider" role="region" aria-label="Галерея фотографий объектов">
-              <button class="slider-btn slider-btn-prev" onclick="gallerySlide(-1)" aria-label="Предыдущий слайд">&#8249;</button>
-              <div class="slider-track" id="galleryTrack">
-                <div class="slide">
-                  <img src="Бар «Союз», г. Заречный.jpg" alt="Бар «Союз», г. Заречный">
-                  <div class="slide-caption">Бар «Союз», г. Заречный</div>
-                </div>
-                <div class="slide">
-                  <img src="Бизнес-центр «Плаза», г. Пенза.webp" alt="Бизнес-центр «Плаза», г. Пенза">
-                  <div class="slide-caption">Бизнес-центр «Плаза», г. Пенза</div>
-                </div>
-                <div class="slide">
-                  <img src="Детская школа искусств г. Заречного.jpg" alt="Детская школа искусств г. Заречного">
-                  <div class="slide-caption">Детская школа искусств г. Заречного</div>
-                </div>
-                <div class="slide">
-                  <img src="Комбикормовый з-д Каменского элеватора.jpg" alt="Комбикормовый з-д Каменского элеватора">
-                  <div class="slide-caption">Комбикормовый з-д Каменского элеватора</div>
-                </div>
-                <div class="slide">
-                  <img src="Нижнеломовский ликёро-водочный з-д.jpg" alt="Нижнеломовский ликёро-водочный з-д">
-                  <div class="slide-caption">Нижнеломовский ликёро-водочный з-д</div>
-                </div>
-                <div class="slide">
-                  <img src="ОАО «Пензаспиртпром».jpg" alt="ОАО «Пензаспиртпром»">
-                  <div class="slide-caption">ОАО «Пензаспиртпром»</div>
-                </div>
-                <div class="slide">
-                  <img src="Пункты весового контроля Федеральной дирекции автодороги Москва–Самара.webp" alt="Пункты весового контроля Федеральной дирекции автодороги Москва–Самара">
-                  <div class="slide-caption">Пункты весового контроля Федеральной дирекции автодороги Москва–Самара</div>
-                </div>
-                <div class="slide">
-                  <img src="Сеть магазинов «Магнит», г. Заречный Пензенской области.jpg" alt="Сеть магазинов «Магнит», г. Заречный Пензенской области">
-                  <div class="slide-caption">Сеть магазинов «Магнит», г. Заречный Пензенской области</div>
-                </div>
-                <div class="slide">
-                  <img src="Управление Росреестра по Пензенской области.webp" alt="Управление Росреестра по Пензенской области">
-                  <div class="slide-caption">Управление Росреестра по Пензенской области</div>
-                </div>
-                <div class="slide">
-                  <img src="ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение.jpg" alt="ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение">
-                  <div class="slide-caption">ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение</div>
-                </div>
-                <div class="slide">
-                  <img src="Хлебозавод г. Стерлитамак.jpg" alt="Хлебозавод г. Стерлитамак">
-                  <div class="slide-caption">Хлебозавод г. Стерлитамак</div>
-                </div>
-              </div>
-              <button class="slider-btn slider-btn-next" onclick="gallerySlide(1)" aria-label="Следующий слайд">&#8250;</button>
-            </div>
-            <div class="slider-counter" id="galleryCounter">1 / 11</div>
-          </div>
-        </section>
-
-        <!-- ======================================
-             УСЛУГИ
-        ====================================== -->
-        <section id="services" class="content-section">
-          <div class="content-section-title">Наши услуги</div>
-          <p style="color:#555; margin-bottom:12px;">Полный цикл работ: от проекта и монтажа до гарантийного обслуживания</p>
-
-          <ul class="services-list">
-            <li class="service-item">
-              <div class="service-item-icon">📷</div>
-              <div class="service-item-body">
-                <h4>Системы видеонаблюдения</h4>
-                <p>Аналоговые и IP-камеры, видеорегистраторы с выводом на интернет, купольные, уличные, ИК-камеры для круглосуточного наблюдения. Подходит для офисов, коттеджей, складов, банков и торговых залов.</p>
-                <a href="#contacts">Узнать стоимость</a>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-item-icon">🔥</div>
-              <div class="service-item-body">
-                <h4>Пожарная сигнализация</h4>
-                <p>Проектирование, монтаж и техническое обслуживание систем АПС и оповещения о пожаре. Разработка декларации пожарной безопасности и расчёт пожарного риска.</p>
-                <a href="#contacts">Узнать стоимость</a>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-item-icon">🔒</div>
-              <div class="service-item-body">
-                <h4>Охранная сигнализация</h4>
-                <p>Монтаж охранно-пожарных систем для жилых и коммерческих объектов. Датчики движения, открытия дверей и окон, GSM-оповещение и интеграция с пультом охраны.</p>
-                <a href="#contacts">Узнать стоимость</a>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-item-icon">🚧</div>
-              <div class="service-item-body">
-                <h4>Периметровая охрана и заграждения</h4>
-                <p>Инженерные заграждения, заборы и системы периметровой охраны для промышленных предприятий, складов и частных территорий.</p>
-                <a href="#contacts">Узнать стоимость</a>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-item-icon">🪪</div>
-              <div class="service-item-body">
-                <h4>Системы контроля доступа (СКУД)</h4>
-                <p>Турникеты, электронные замки, домофоны, видеодомофоны и пропускные системы для офисов, школ и производственных объектов. Интеграция с видеонаблюдением.</p>
-                <a href="#contacts">Узнать стоимость</a>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-item-icon">📡</div>
-              <div class="service-item-body">
-                <h4>Средства коммуникации и связи</h4>
-                <p>Структурированные кабельные сети (СКС), системы внутренней и внешней связи, локальные сети для промышленных и административных объектов.</p>
-                <a href="#contacts">Узнать стоимость</a>
-              </div>
-            </li>
-            <li class="service-item">
-              <div class="service-item-icon">📋</div>
-              <div class="service-item-body">
-                <h4>Пожарный аудит и оценка рисков</h4>
-                <p>Независимая оценка пожарного риска, разработка декларации пожарной безопасности и расчёт пожарного риска для любых объектов в соответствии с требованиями законодательства.</p>
-                <a href="#contacts">Узнать стоимость</a>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- ======================================
-             ПОЧЕМУ МЫ (about)
-        ====================================== -->
-        <section id="about" class="content-section">
-          <div class="content-section-title">33 года на страже вашей безопасности</div>
-          <div class="about-text">
-            <p>
-              ООО НПФ «Диполь-М» работает с <strong>1991 года</strong>. За это время мы
-              выполнили сотни объектов по всей Пензенской и соседних областях —
-              от небольших офисов до крупных промышленных предприятий.
-            </p>
-            <p>
-              Мы работали на пунктах весового контроля Федеральной дирекции
-              автодороги Москва–Самара (Рязань, Сызрань, р.п. Мокшан),
-              оснащали системами безопасности учреждения образования
-              и дошкольные заведения по всему региону.
-            </p>
-            <p>
-              Собственная производственная база и штат высококвалифицированных
-              специалистов позволяют нам предлагать отличное качество монтажа
-              по минимальным ценам.
-            </p>
-            <div class="about-tags-row">
-              <span class="tag-item">🏆 С 1991 года</span>
-              <span class="tag-item">📍 Пенза и регионы</span>
-              <span class="tag-item">🔧 Собственная база</span>
-              <span class="tag-item">📜 Лицензии и допуски</span>
-            </div>
-          </div>
-          <table class="features-table">
-            <tr>
-              <td>
-                <strong>🎯 Индивидуальный подход</strong>
-                Подбираем оборудование исходя из задач и бюджета конкретного объекта
-              </td>
-              <td>
-                <strong>👷 Высокая квалификация</strong>
-                Монтаж и ПНР выполняют опытные специалисты с профильным образованием
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <strong>💰 Качество по разумной цене</strong>
-                Доступные цены даже для учебных заведений. Скидки и рассрочка
-              </td>
-              <td>
-                <strong>🔐 Полная конфиденциальность</strong>
-                Не разглашаем схемы и данные об установленных системах безопасности
-              </td>
-            </tr>
-          </table>
-        </section>
-
-        <!-- ======================================
-             КАК МЫ РАБОТАЕМ
-        ====================================== -->
-        <section id="how-we-work" class="content-section">
-          <div class="content-section-title">Как мы работаем</div>
-          <p style="color:#555; margin-bottom:12px;">Чёткий процесс — от первого звонка до сдачи объекта под ключ</p>
-
-          <ul class="steps-list">
-            <li class="step-item">
-              <div class="step-num">1</div>
-              <div class="step-body">
-                <h4>Обследование объекта</h4>
-                <p>Выезжаем на объект, оцениваем задачи и составляем техническое задание</p>
-                <span class="step-free">Бесплатно для Пензы и области</span>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-num">2</div>
-              <div class="step-body">
-                <h4>Проектирование</h4>
-                <p>Разрабатываем проектную документацию, подбираем оборудование и комплектующие</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-num">3</div>
-              <div class="step-body">
-                <h4>Монтаж и наладка</h4>
-                <p>Профессиональный монтаж с соблюдением сроков. Пусконаладочные работы и тестирование</p>
-              </div>
-            </li>
-            <li class="step-item">
-              <div class="step-num">4</div>
-              <div class="step-body">
-                <h4>Гарантийное обслуживание</h4>
-                <p>Гарантия на выполненные работы. Постгарантийное техническое обслуживание</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- ======================================
-             ГЕОГРАФИЯ
-        ====================================== -->
-        <section id="geography" class="content-section">
-          <div class="content-section-title">География обслуживания</div>
-          <p>
-            Основной регион работы — <strong>Пензенская область</strong>.
-            Мы также принимаем заказы из соседних регионов и готовы выехать
-            для обследования объекта.
-          </p>
-          <div class="regions-row">
-            <span class="region-badge main">📍 Пенза</span>
-            <span class="region-badge">Пензенская область</span>
-            <span class="region-badge">Самарская область</span>
-            <span class="region-badge">Саратовская область</span>
-            <span class="region-badge">Тамбовская область</span>
-            <span class="region-badge">Рязанская область</span>
-          </div>
-          <div class="geo-items">
-            <div class="geo-item">
-              <span class="geo-item-icon">🏙️</span>
-              <div>
-                <h4>Пенза и область</h4>
-                <p>Бесплатное предпроектное обследование объекта</p>
-              </div>
-            </div>
-            <div class="geo-item">
-              <span class="geo-item-icon">🛣️</span>
-              <div>
-                <h4>Трасса Москва–Самара</h4>
-                <p>Рязань, Сызрань, р.п. Мокшан — опыт работы на объектах федерального значения</p>
-              </div>
-            </div>
-            <div class="geo-item">
-              <span class="geo-item-icon">🗺️</span>
-              <div>
-                <h4>Соседние регионы</h4>
-                <p>Самара, Саратов, Тамбов, Рязань — выезжаем по согласованию</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ======================================
-             КОНТАКТЫ
-        ====================================== -->
-        <section id="contacts" class="content-section">
-          <div class="content-section-title">Свяжитесь с нами</div>
-          <p style="color:#555; margin-bottom:14px;">Получите бесплатную консультацию и расчёт стоимости для вашего объекта</p>
-
-          <div class="contacts-inner">
-            <div>
-              <h3>Контактная информация</h3>
-              <ul class="contact-info-list">
-                <li>
-                  <span class="ci-icon">📍</span>
-                  <div class="ci-body">
-                    <strong>Адрес</strong>
-                    440026, г. Пенза, ул. Советская, д.2, к.21
-                  </div>
-                </li>
-                <li>
-                  <span class="ci-icon">📞</span>
-                  <div class="ci-body">
-                    <strong>Телефон</strong>
-                    <a href="tel:89270942331">8-927-094-23-31</a>
-                  </div>
-                </li>
-                <li>
-                  <span class="ci-icon">📠</span>
-                  <div class="ci-body">
-                    <strong>Факс</strong>
-                    (8412) 55-29-30
-                  </div>
-                </li>
-                <li>
-                  <span class="ci-icon">✉️</span>
-                  <div class="ci-body">
-                    <strong>E-mail</strong>
-                    <a href="mailto:dipol@sura.ru">dipol@sura.ru</a><br />
-                    <a href="mailto:moshnin52@mail.ru">moshnin52@mail.ru</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="cta-panel">
-              <h3>Получите бесплатную консультацию</h3>
-              <p>
-                Позвоните нам или оставьте заявку — мы ответим в рабочее время
-                и организуем бесплатный выезд специалиста для обследования объекта
-                в Пензе и Пензенской области.
-              </p>
-              <a href="tel:89270942331" class="btn">📞 Позвонить: 8-927-094-23-31</a>
-              <p class="cta-note">Или напишите на dipol@sura.ru — ответим в течение рабочего дня</p>
-            </div>
-          </div>
-        </section>
-
-      </main>
-
-      <!-- =========================================
-           RIGHT SIDEBAR
-      ========================================= -->
-      <aside class="sidebar-right">
-
-        <div class="sidebar-box">
-          <div class="sidebar-box-title">Наши телефоны</div>
-          <div class="sidebar-box-body">
-            <div class="sb-contact-item">
-              <span class="ci-icon">📞</span>
-              <div>
-                <strong>Мобильный</strong>
-                <a href="tel:89270942331" class="sb-phone">8-927-094-23-31</a>
-              </div>
-            </div>
-            <div class="sb-contact-item">
-              <span class="ci-icon">📠</span>
-              <div>
-                <strong>Факс</strong>
-                <span style="font-size:0.86rem;">(8412) 55-29-30</span>
-              </div>
-            </div>
-            <div class="sb-contact-item">
-              <span class="ci-icon">✉️</span>
-              <div>
-                <strong>E-mail</strong>
-                <a href="mailto:dipol@sura.ru" style="font-size:0.82rem;">dipol@sura.ru</a><br />
-                <a href="mailto:moshnin52@mail.ru" style="font-size:0.82rem;">moshnin52@mail.ru</a>
-              </div>
-            </div>
-            <div class="sb-contact-item">
-              <span class="ci-icon">📍</span>
-              <div>
-                <strong>Адрес</strong>
-                <span style="font-size:0.78rem; color:#555;">г. Пенза, ул. Советская, д.2, к.21</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sidebar-box">
-          <div class="sidebar-box-title">Внимание!!!</div>
-          <div class="sidebar-box-body">
-            <p style="font-size:0.8rem; color:#555; margin-bottom:10px;">Специальные предложения — готовые решения по фиксированной цене</p>
-
-            <div class="offer-sb-card">
-              <div class="offer-sb-icon">📹</div>
-              <h4>Система цифрового видеонаблюдения</h4>
-              <p>Оборудование + монтаж под ключ. Подходит для офисов, магазинов и частных домов</p>
-              <span class="offer-sb-price">от 19 530 ₽</span>
-              <a href="#contacts" class="btn btn-orange">Заказать</a>
-            </div>
-
-            <div class="offer-sb-card">
-              <div class="offer-sb-icon">🔔</div>
-              <h4>Комплект видеодомофона</h4>
-              <p>Видеодомофон с трубкой + монтаж. Контроль входной двери с записью</p>
-              <span class="offer-sb-price">от 14 190 ₽</span>
-              <a href="#contacts" class="btn btn-orange">Заказать</a>
-            </div>
-          </div>
-        </div>
-
-        </div>
-
-      </aside>
-
-    </div><!-- /page-columns -->
-  </div><!-- /wrap -->
-</div><!-- /page-body -->
-
-<!-- =============================================
-     FOOTER
-============================================= -->
-<footer>
-  <div class="wrap">
-    <div class="footer-inner">
-
-      <div class="footer-logo">
-        Диполь<span>-М</span>
-      </div>
-
-      <div class="footer-info">
-        ООО НПФ «Диполь-М» · 440026, г. Пенза, ул. Советская, д.2, к.21<br />
-        © 1991–2024 · Системы безопасности в Пензе и регионах
-      </div>
-
-      <div class="footer-links">
-        <a href="#services">Услуги</a>
-        <a href="#contacts">Контакты</a>
-        <a href="mailto:dipol@sura.ru">dipol@sura.ru</a>
-      </div>
-
     </div>
-  </div>
-</footer>
-
-<!-- =============================================
-     JAVASCRIPT
-============================================= -->
+  </section>
+  <div class="stats"><div class="container stats-grid"><div class="stat"><strong>1991</strong><span>год основания</span></div><div class="stat"><strong>30+</strong><span>лет опыта</span></div><div class="stat"><strong>100+</strong><span>объектов</span></div><div class="stat"><strong>РФ</strong><span>география работ</span></div></div></div>
+  <section id="about"><div class="container">
+    <div class="section-head"><div><div class="eyebrow">О предприятии</div><h2>Инженерная компания с опытом работы на сложных объектах</h2></div><p class="lead">ООО НПФ «Диполь-М» предлагает услуги в области продажи, монтажа и пусконаладки систем безопасности, связи и инженерной защиты объектов.</p></div>
+    <div class="about-grid">
+      <div class="panel about-text"><p>ООО НПФ «Диполь-М» предлагает услуги в области продажи, монтажа и пусконаладки систем пожарной и охранной сигнализации, периметровых средств охраны, систем видеонаблюдения, систем ограничения доступа, заборов, инженерных заграждений, технических средств обеспечения безопасности и средств коммуникации и связи.</p><p>Предприятие создано в 1991 году для проведения монтажных и пусконаладочных работ систем технического обеспечения безопасности и связи, а также для их разработки, производства и продажи.</p><p>Монтаж и пусконаладку производим в Пензе, Пензенской области, включая г. Заречный, а также на территории Российской Федерации.</p></div>
+      <div class="panel about-text"><p>Предприятие располагает собственной производственной базой, штатом высококвалифицированных сотрудников и большим опытом работы в области технических средств обеспечения безопасности и разработки систем видеонаблюдения и связи любой степени сложности.</p><p>Особую эффективность даёт возможность использования приборов, оборудования и комплексов, разработанных для объектов МВД, ФСБ, АЭС и защиты государственной границы.</p></div>
+    </div>
+    <div class="cards"><div class="card"><div class="icon">🏭</div><h3>Собственная производственная база</h3><p>Контроль качества, гибкость решений и выполнение задач любой сложности.</p></div><div class="card"><div class="icon">🧩</div><h3>Комплексный подход</h3><p>Проектирование, поставка оборудования, монтаж, пусконаладка и обслуживание.</p></div><div class="card"><div class="icon">🛡️</div><h3>Опыт специальных объектов</h3><p>Решения для объектов МВД, ФСБ, АЭС и охраны государственной границы.</p></div><div class="card"><div class="icon">🔐</div><h3>Конфиденциальность</h3><p>Индивидуальный подбор решений и аккуратная работа с чувствительной информацией.</p></div></div>
+  </div></section>
+  <section id="services" class="services"><div class="container"><div class="section-head"><div><div class="eyebrow">Услуги</div><h2>Полный цикл работ по системам безопасности</h2></div><p class="lead">От обследования объекта и проекта до монтажа, настройки и технического обслуживания.</p></div><div class="service-grid">
+    <article class="service-card"><div class="icon">📹</div><h3>Системы видеонаблюдения</h3><p>Аналоговые и IP-камеры, видеорегистраторы, уличные и купольные камеры, ИК-наблюдение, удалённый доступ через интернет.</p><a href="#contacts">Узнать стоимость →</a></article>
+    <article class="service-card"><div class="icon">🔥</div><h3>Пожарная сигнализация</h3><p>Проектирование, монтаж, обслуживание АПС и систем оповещения, декларации пожарной безопасности, расчёт пожарного риска.</p><a href="#contacts">Узнать стоимость →</a></article>
+    <article class="service-card"><div class="icon">🚨</div><h3>Охранная сигнализация</h3><p>Охранно-пожарные системы для жилых, коммерческих, промышленных и социальных объектов.</p><a href="#contacts">Узнать стоимость →</a></article>
+    <article class="service-card"><div class="icon">🪪</div><h3>Контроль доступа</h3><p>Системы ограничения доступа, турникеты, электронные замки, контроллеры, карты доступа и интеграция с охраной.</p><a href="#contacts">Узнать стоимость →</a></article>
+    <article class="service-card"><div class="icon">🚧</div><h3>Периметровая охрана</h3><p>Периметровые средства охраны, инженерные заграждения, заборы, защита территории и инфраструктуры.</p><a href="#contacts">Узнать стоимость →</a></article>
+    <article class="service-card"><div class="icon">📡</div><h3>Связь и коммуникации</h3><p>Средства коммуникации, связи и технического обеспечения безопасности для объектов разного масштаба.</p><a href="#contacts">Узнать стоимость →</a></article>
+  </div></div></section>
+  <section id="objects"><div class="container"><div class="section-head"><div><div class="eyebrow">Объекты</div><h2>Решения для коммерческих, социальных и инфраструктурных объектов</h2></div></div><div class="object-grid"><div class="object-item">Офисы и бизнес-центры</div><div class="object-item">Школы, колледжи и детские учреждения</div><div class="object-item">Промышленные объекты</div><div class="object-item">Склады и логистические комплексы</div><div class="object-item">Банки и торговые залы</div><div class="object-item">Коттеджи и частные территории</div><div class="object-item">Государственные и специальные объекты</div><div class="object-item">Инфраструктурные объекты</div></div></div></section>
+  <section id="work" class="services"><div class="container"><div class="section-head"><div><div class="eyebrow">Процесс</div><h2>Как мы работаем</h2></div><p class="lead">Понятная последовательность от первичной консультации до обслуживания готовой системы.</p></div><div class="steps"><div class="step"><div class="step-num">01</div><h3>Заявка и консультация</h3><p>Уточняем объект, задачи, риски, требования к безопасности и бюджету.</p></div><div class="step"><div class="step-num">02</div><h3>Обследование объекта</h3><p>Анализируем планировку, точки контроля, периметр и технические условия.</p></div><div class="step"><div class="step-num">03</div><h3>Проект и оборудование</h3><p>Формируем техническое решение, спецификацию, смету и план работ.</p></div><div class="step"><div class="step-num">04</div><h3>Монтаж и пусконаладка</h3><p>Устанавливаем оборудование, настраиваем систему, проверяем работоспособность.</p></div><div class="step"><div class="step-num">05</div><h3>Обслуживание</h3><p>Проводим техническое обслуживание, модернизацию и поддержку системы.</p></div></div></div></section>
+  <section id="gallery" class="gallery"><div class="container"><div class="section-head"><div><div class="eyebrow">Галерея</div><h2>Фотографии объектов и технических решений</h2></div><p class="lead">Изображения подключены локально из корня проекта и работают на GitHub Pages без внешних ресурсов.</p></div><div class="slider" id="gallerySlider"><button class="slider-btn prev" type="button" onclick="gallerySlide(-1)" aria-label="Предыдущий слайд">‹</button><div class="slider-track" id="galleryTrack">
+          <article class="slide">
+            <img src="Бар «Союз», г. Заречный.jpg" alt="Бар «Союз», г. Заречный">
+            <div class="slide-caption">Бар «Союз», г. Заречный</div>
+          </article>
+          <article class="slide">
+            <img src="Бизнес-центр «Плаза», г. Пенза.webp" alt="Бизнес-центр «Плаза», г. Пенза">
+            <div class="slide-caption">Бизнес-центр «Плаза», г. Пенза</div>
+          </article>
+          <article class="slide">
+            <img src="Детская школа искусств г. Заречного.jpg" alt="Детская школа искусств г. Заречного">
+            <div class="slide-caption">Детская школа искусств г. Заречного</div>
+          </article>
+          <article class="slide">
+            <img src="Комбикормовый з-д Каменского элеватора.jpg" alt="Комбикормовый з-д Каменского элеватора">
+            <div class="slide-caption">Комбикормовый з-д Каменского элеватора</div>
+          </article>
+          <article class="slide">
+            <img src="Нижнеломовский ликёро-водочный з-д.jpg" alt="Нижнеломовский ликёро-водочный з-д">
+            <div class="slide-caption">Нижнеломовский ликёро-водочный з-д</div>
+          </article>
+          <article class="slide">
+            <img src="ОАО «Пензаспиртпром».jpg" alt="ОАО «Пензаспиртпром»">
+            <div class="slide-caption">ОАО «Пензаспиртпром»</div>
+          </article>
+          <article class="slide">
+            <img src="Пункты весового контроля Федеральной дирекции автодороги Москва–Самара.webp" alt="Пункты весового контроля Федеральной дирекции автодороги Москва–Самара">
+            <div class="slide-caption">Пункты весового контроля Федеральной дирекции автодороги Москва–Самара</div>
+          </article>
+          <article class="slide">
+            <img src="Сеть магазинов «Магнит», г. Заречный Пензенской области.jpg" alt="Сеть магазинов «Магнит», г. Заречный Пензенской области">
+            <div class="slide-caption">Сеть магазинов «Магнит», г. Заречный Пензенской области</div>
+          </article>
+          <article class="slide">
+            <img src="Управление Росреестра по Пензенской области.webp" alt="Управление Росреестра по Пензенской области">
+            <div class="slide-caption">Управление Росреестра по Пензенской области</div>
+          </article>
+          <article class="slide">
+            <img src="ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение.jpg" alt="ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение">
+            <div class="slide-caption">ФГУП «Куйбышевская железная дорога» МПС РФ, Пензенское отделение</div>
+          </article>
+          <article class="slide">
+            <img src="Хлебозавод г. Стерлитамак.jpg" alt="Хлебозавод г. Стерлитамак">
+            <div class="slide-caption">Хлебозавод г. Стерлитамак</div>
+          </article>
+        </div><button class="slider-btn next" type="button" onclick="gallerySlide(1)" aria-label="Следующий слайд">›</button></div><div class="counter" id="galleryCounter">1 / 11</div></div></section>
+  <section id="geo"><div class="container geo-grid"><div><div class="eyebrow">География</div><h2>Работаем в Пензе, Пензенской области и по всей России</h2><p class="lead">Монтаж и пусконаладку выполняем в Пензе, Пензенской области, включая г. Заречный, а также на территории Российской Федерации.</p><div class="geo-badges"><span class="badge">Пенза</span><span class="badge">Пензенская область</span><span class="badge">Заречный</span><span class="badge">Российская Федерация</span></div></div><div class="panel"><h3>Опыт объектов</h3><p>Бизнес-центр «Плаза», Детская школа искусств г. Заречного, ОАО «Пензаспиртпром», Управление Росреестра по Пензенской области, сеть магазинов «Магнит», ФГУП «Куйбышевская железная дорога» МПС РФ и другие объекты.</p></div></div></section>
+  <section class="trust-section"><div class="container"><div class="section-head"><div><div class="eyebrow">Доверие</div><h2>Почему выбирают Диполь-М</h2></div><p class="lead">Компания сочетает инженерную экспертизу, опыт специальных объектов и практический подход к монтажу.</p></div><div class="trust-grid"><div class="trust-item"><h3>Опыт с 1991 года</h3><p>Более 30 лет работы в системах технического обеспечения безопасности.</p></div><div class="trust-item"><h3>Собственная база</h3><p>Производственная база и специалисты для задач разной сложности.</p></div><div class="trust-item"><h3>Под ключ</h3><p>Проектирование, поставка, монтаж, настройка и обслуживание.</p></div><div class="trust-item"><h3>Ответственные объекты</h3><p>Опыт решений для МВД, ФСБ, АЭС и инфраструктурных объектов.</p></div><div class="trust-item"><h3>Подбор оборудования</h3><p>Решение под объект, бюджет, риски и эксплуатационные требования.</p></div><div class="trust-item"><h3>Конфиденциальность</h3><p>Аккуратная работа с информацией о схемах и системах защиты.</p></div></div></div></section>
+  <section id="contacts"><div class="container contact-grid"><div><div class="eyebrow">Контакты</div><h2>Нужна система безопасности для объекта?</h2><p class="lead">Оставьте заявку или свяжитесь напрямую. Подберём решение под задачу, объект и бюджет.</p><ul class="contact-list"><li><strong>ООО НПФ «Диполь-М»</strong>Системы безопасности с 1991 года</li><li><strong>Адрес</strong>440026, г. Пенза, ул. Советская, д.2, к.21</li><li><strong>Телефон</strong><a href="tel:89270942331">8-927-094-23-31</a></li><li><strong>Факс</strong>(8412) 55-29-30</li><li><strong>Email</strong><a href="mailto:dipol@sura.ru">dipol@sura.ru</a></li></ul></div><div class="panel"><h3>Получить консультацию</h3><p>Расскажите о типе объекта, задачах безопасности и желаемых сроках. Специалист предложит технический вариант и следующий шаг.</p><div style="display:grid;gap:12px;margin-top:20px"><a class="btn" href="tel:89270942331">Позвонить</a><a class="btn outline" href="mailto:dipol@sura.ru">Написать на email</a></div></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><strong>Диполь-М</strong><br>Системы безопасности с 1991 года</div><div>ООО НПФ «Диполь-М» · 440026, г. Пенза, ул. Советская, д.2, к.21<br>© 1991–2026 · Системы безопасности в Пензе и регионах</div><div><a href="#services">Услуги</a> · <a href="#about">О компании</a> · <a href="#contacts">Контакты</a></div></div></footer>
 <script>
-  function openNav() {
-    document.getElementById('navOverlay').classList.add('open');
-    document.getElementById('burgerBtn').setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeNav() {
-    document.getElementById('navOverlay').classList.remove('open');
-    document.getElementById('burgerBtn').setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
-
-  // Close mobile nav on Escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeNav();
-  });
+  var burger=document.getElementById('burger'),panel=document.getElementById('mobilePanel');
+  burger.addEventListener('click',function(){panel.classList.toggle('open');burger.textContent=panel.classList.contains('open')?'×':'☰';});
+  panel.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){panel.classList.remove('open');burger.textContent='☰';});});
+  (function(){var current=0,track=document.getElementById('galleryTrack'),counter=document.getElementById('galleryCounter'),total=track.children.length;window.gallerySlide=function(dir){current=(current+dir+total)%total;track.style.transform='translateX(-'+(current*100)+'%)';counter.textContent=(current+1)+' / '+total;};})();
 </script>
-<script>
-  (function() {
-    var current = 0;
-    var track = document.getElementById('galleryTrack');
-    var counter = document.getElementById('galleryCounter');
-    var total = track.children.length;
-    counter.textContent = '1 / ' + total;
-    window.gallerySlide = function(dir) {
-      current = (current + dir + total) % total;
-      track.style.transform = 'translateX(-' + (current * 100) + '%)';
-      counter.textContent = (current + 1) + ' / ' + total;
-    };
-    document.getElementById('gallerySlider').addEventListener('keydown', function(e) {
-      if (e.key === 'ArrowLeft') { gallerySlide(-1); }
-      else if (e.key === 'ArrowRight') { gallerySlide(1); }
-    });
-  })();
-</script>
-
 </body>
 </html>
