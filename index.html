@@ -487,9 +487,9 @@
 
     .about-layout {
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
+      grid-template-columns: .95fr 1.05fr;
       gap: 34px;
-      align-items: start;
+      align-items: center;
     }
     .about-media-column {
       display: grid;
@@ -503,14 +503,14 @@
     }
     .about-photo img {
       width: 100%;
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 16 / 10;
       object-fit: cover;
     }
     .about-side-card {
-      padding: 20px;
+      padding: 22px;
       border-radius: 8px;
       border: 1px solid var(--line);
-      background: #f7fafd;
+      background: linear-gradient(145deg, #f7fafd, #eef5ff);
     }
     .about-side-card strong {
       display: block;
@@ -525,11 +525,48 @@
     }
     .about-copy {
       display: grid;
-      gap: 16px;
+      gap: 14px;
       color: var(--muted);
-      font-size: 17px;
+      font-size: 16px;
     }
     .about-copy p { margin: 0; }
+    .about-intro {
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(18, 42, 72, .06);
+    }
+    .about-intro strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--ink);
+      font-size: 24px;
+      line-height: 1.18;
+    }
+    .about-fact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .about-fact {
+      padding: 14px;
+      border-radius: 8px;
+      background: #0b213f;
+      color: #fff;
+    }
+    .about-fact b {
+      display: block;
+      font-size: 22px;
+      line-height: 1;
+    }
+    .about-fact span {
+      display: block;
+      margin-top: 6px;
+      color: rgba(255,255,255,.72);
+      font-size: 12px;
+    }
     .about-tags {
       display: flex;
       gap: 8px;
@@ -717,7 +754,7 @@
       .hero-inner { padding: 48px 0 84px; gap: 24px; }
       h1 { font-size: 40px; }
       .hero-proof { grid-template-columns: repeat(2, 1fr); }
-      .hero-card-list, .visual-band, .services-grid, .portfolio-grid, .offers, .features, .work-grid, .info-image-list { grid-template-columns: 1fr; }
+      .hero-card-list, .visual-band, .services-grid, .portfolio-grid, .offers, .features, .work-grid, .info-image-list, .about-fact-grid { grid-template-columns: 1fr; }
       .client-list { columns: 1; }
       .section { padding: 48px 0; }
       .section-head { display: block; }
@@ -885,48 +922,34 @@
       </div>
     </section>
 
-    <section class="section" id="about">
+        <section class="section" id="about">
       <div class="wrap about-layout">
         <div class="about-media-column">
           <div class="about-photo">
-            <img src="assets/systems-gallery.png" alt="Галерея инженерных систем безопасности для объекта">
+            <img src="assets/about-security-collage.png" alt="Инженерные системы безопасности на объекте">
           </div>
           <div class="about-side-card">
-            <strong>Индивидуальный подход и конфиденциальность</strong>
-            <p>Подбираем оборудование под конкретный объект, не раскрываем схемы установленных систем и сопровождаем проект после сдачи.</p>
+            <strong>Один подрядчик для всей системы</strong>
+            <p>Проект, поставка оборудования, монтаж, пусконаладка и последующее обслуживание без лишних подрядчиков.</p>
           </div>
         </div>
-        <div>
+        <div class="about-intro">
           <div class="section-kicker">О предприятии</div>
-          <h2>33 года инженерной практики в технических средствах безопасности и связи</h2>
           <div class="about-copy">
-            <p>ООО НПФ «Диполь-М» предлагает услуги в области продажи, 
-монтажа и пусконаладки систем видеонаблюдения, охранных систем, 
-периметровых средств охраны, систем ограничения доступа, заборов, 
-инженерных заграждений, технических средств обеспечения безопасности и 
-средств коммуникации и связи.</p>
-            <p>Предприятие создано в 1991 году для проведения монтажных и
- пусконаладочных работ систем технического обеспечения безопасности и 
-связи, а также для их разработки, производства и продажи.</p>
-            <p>Компания располагает собственной производственной базой, 
-штатом высококвалифицированных сотрудников и большим опытом разработки 
-систем видеонаблюдения и связи любой степени сложности. Особую 
-эффективность дает использование приборов и комплексов, разработанных 
-для оборудования объектов МВД, ФСБ, АЭС и защиты государственной 
-границы.</p>
-            <div class="about-tags">
-              <span class="tag">С 1991 года</span>
-              <span class="tag">Пенза и область</span>
-              <span class="tag">Собственная база</span>
-              <span class="tag">Монтаж и ПНР</span>
-              <span class="tag">Связь и безопасность</span>
-            </div>
+            <strong>Диполь-М проектирует и монтирует комплексные системы безопасности и связи</strong>
+            <p>ООО НПФ «Диполь-М» работает с 1991 года и выполняет монтаж и пусконаладку систем видеонаблюдения, охранных систем, СКУД, периметровой охраны, слаботочных сетей и средств коммуникации.</p>
+            <p>Собственная производственная база, опытные специалисты и конфиденциальный подход позволяют решать задачи для промышленных, административных, торговых и учебных объектов.</p>
+          </div>
+          <div class="about-fact-grid">
+            <div class="about-fact"><b>1991</b><span>год основания</span></div>
+            <div class="about-fact"><b>200+</b><span>реализованных проектов</span></div>
+            <div class="about-fact"><b>10+</b><span>видов инженерных систем</span></div>
           </div>
           <div class="features">
-            <div class="feature"><strong>Собственная производственная база</strong><span>Позволяет выполнять работы любой сложности с высоким качеством по разумным ценам.</span></div>
-            <div class="feature"><strong>Конфиденциальность</strong><span>Не раскрываем схемы и данные установленных систем.</span></div>
-            <div class="feature"><strong>Индивидуальный подход</strong><span>Решаем задачи любой сложности с персональным подбором оборудования.</span></div>
-            <div class="feature"><strong>Опыт с учреждениями образования</strong><span>Школы, колледжи и детские учреждения Пензенской области.</span></div>
+            <div class="feature"><strong>Собственная база</strong><span>Помогает держать сроки, качество и адекватную стоимость работ.</span></div>
+            <div class="feature"><strong>Конфиденциальность</strong><span>Не раскрываем схемы, данные и особенности систем на объекте.</span></div>
+            <div class="feature"><strong>Индивидуальный подход</strong><span>Подбираем решения под задачи, бюджет и формат конкретной территории.</span></div>
+            <div class="feature"><strong>Объекты разного масштаба</strong><span>Школы, бизнес-центры, склады, производства и торговые объекты.</span></div>
           </div>
         </div>
       </div>
