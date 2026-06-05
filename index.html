@@ -278,8 +278,20 @@
 
     main { margin-top: -40px; position: relative; z-index: 2; }
     .section {
+      position: relative;
       padding: 66px 0;
       background: #fff;
+    }
+    .section + .section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: max(16px, calc((100% - 1180px) / 2));
+      width: min(150px, calc(100% - 32px));
+      height: 4px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      box-shadow: 0 8px 22px rgba(21, 86, 199, .18);
     }
     .section.soft { background: var(--soft); }
     .section.dark { background: #0b213f; color: #fff; }
@@ -757,6 +769,11 @@
       .hero-card-list, .visual-band, .services-grid, .portfolio-grid, .offers, .features, .work-grid, .info-image-list, .about-fact-grid { grid-template-columns: 1fr; }
       .client-list { columns: 1; }
       .section { padding: 48px 0; }
+      .section + .section::before {
+        left: 12px;
+        width: 96px;
+        height: 3px;
+      }
       .section-head { display: block; }
       .section-desc { margin-top: 12px; }
       .geo-card, .contact-card, .dark-feature { padding: 22px; }
