@@ -163,17 +163,21 @@
       color: #fff;
       min-height: 670px;
       display: flex;
-      align-items: stretch;
+      align-items: flex-end;
       overflow: hidden;
-      background: #081a36;
+      background: linear-gradient(90deg, #081a36 0%, #10223b 50%, #081a36 100%);
     }
     .hero::before {
       content: "";
       position: absolute;
-      inset: 0;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: min(100%, 1360px);
+      transform: translateX(-50%);
       background:
-        linear-gradient(90deg, rgba(5, 18, 39, .86) 0%, rgba(5, 18, 39, .66) 42%, rgba(5, 18, 39, .18) 74%, rgba(5, 18, 39, .28) 100%),
-        url("assets/dipolm-hero.png") center right/cover no-repeat;
+        linear-gradient(90deg, rgba(5, 18, 39, .62) 0%, rgba(5, 18, 39, .38) 42%, rgba(5, 18, 39, .1) 74%, rgba(5, 18, 39, .18) 100%),
+        url("assets/state.png") center center/cover no-repeat;
       z-index: -2;
     }
     .hero::after {
@@ -188,8 +192,8 @@
       display: grid;
       grid-template-columns: minmax(0, 720px);
       gap: 42px;
-      align-items: center;
-      padding: 70px 0 94px;
+      align-items: end;
+      padding: 70px 0 180px;
     }
     .eyebrow {
       display: inline-flex;
@@ -276,7 +280,7 @@
       font-weight: 800;
     }
 
-    main { margin-top: -40px; position: relative; z-index: 2; }
+    main { position: relative; z-index: 2; }
     .section {
       position: relative;
       padding: 66px 0;
@@ -326,39 +330,6 @@
     }
     .section.dark .section-desc { color: rgba(255,255,255,.72); }
 
-    .trust-strip {
-      margin-top: -52px;
-      padding: 0 0 36px;
-      background: transparent;
-    }
-    .trust-panel {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 24px;
-      align-items: center;
-      padding: 24px;
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--line);
-    }
-    .trust-panel p { margin: 0; color: var(--muted); }
-    .trust-logos {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-    .trust-logo {
-      padding: 8px 11px;
-      border-radius: 6px;
-      background: #f1f5fa;
-      border: 1px solid var(--line);
-      color: #31445d;
-      font-size: 13px;
-      font-weight: 800;
-      white-space: nowrap;
-    }
     .info-image-panel {
       display: grid;
       grid-template-columns: .95fr 1.05fr;
@@ -750,8 +721,7 @@
       .hero-card { max-width: 620px; }
       .services-grid, .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
       .work-grid { grid-template-columns: repeat(2, 1fr); }
-      .about-layout, .trust-panel, .info-image-panel { grid-template-columns: 1fr; }
-      .trust-logos { justify-content: flex-start; }
+      .about-layout, .info-image-panel { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 720px) {
@@ -861,7 +831,7 @@
       .hero::before {
         background:
           linear-gradient(90deg, rgba(5, 18, 39, .8) 0%, rgba(5, 18, 39, .58) 54%, rgba(5, 18, 39, .28) 100%),
-          url("assets/dipolm-hero.png") center/cover no-repeat;
+          url("assets/state.png") center/cover no-repeat;
       }
       .hero::after { height: 90px; }
       .hero-inner {
@@ -958,22 +928,6 @@
   </section>
 
   <main>
-    <section class="trust-strip">
-      <div class="wrap">
-        <div class="trust-panel">
-          <p><strong>Нам доверяют промышленные, торговые и социальные объекты.</strong>
- Компания работала с организациями Пензы, Заречного, Стерлитамака, 
-Нижнего Ломова, а также с объектами федеральной трассы Москва-Самара.</p>
-          <div class="trust-logos" aria-label="Примеры клиентов">
-            <span class="trust-logo">Росреестр</span>
-            <span class="trust-logo">Магнит</span>
-            <span class="trust-logo">Пензаспиртпром</span>
-            <span class="trust-logo">Куйбышевская ЖД</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section soft">
       <div class="wrap">
         <div class="info-image-panel">
