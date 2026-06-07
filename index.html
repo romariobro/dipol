@@ -797,14 +797,25 @@
       color: rgba(255,255,255,.68);
       font-size: 14px;
     }
-    .footer-inner {
+    .footer-inner,
+    .footer-sitemap {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
-      gap: 18px;
+      gap: 28px;
       flex-wrap: wrap;
     }
     .footer-brand { color: #fff; font-weight: 900; font-size: 18px; }
+    .footer-sitemap p { margin: 8px 0 0; color: rgba(255,255,255,.72); }
+    .footer-map {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(160px, 1fr));
+      gap: 8px 18px;
+      min-width: min(100%, 380px);
+    }
+    .footer-map strong { grid-column: 1 / -1; color: #fff; }
+    .footer-map a { color: rgba(255,255,255,.82); font-weight: 750; }
+    .footer-map a:hover { color: #fff; }
 
     @media (max-width: 1040px) {
       .nav, .header-actions .btn { display: none; }
@@ -841,8 +852,9 @@
       .geo-card, .contact-card, .dark-feature { padding: 22px; }
       .geo-contact { padding: 22px; }
       .contact-list a { overflow-wrap: anywhere; }
-      .footer-inner { display: block; }
-      .footer-inner > * + * { margin-top: 10px; }
+      .footer-inner, .footer-sitemap { display: block; }
+      .footer-inner > * + *, .footer-sitemap > * + * { margin-top: 18px; }
+      .footer-map { grid-template-columns: 1fr; }
     }
 
 
@@ -996,11 +1008,11 @@
         </span>
       </a>
       <nav class="nav" aria-label="Основная навигация">
-        <a href="/videonablyudenie/">Видеонаблюдение</a>
-        <a href="/skud/">СКУД</a>
-        <a href="/pozharnaya-signalizaciya/">Пожарная сигнализация</a>
-        <a href="/ohrannaya-signalizaciya/">Охранная сигнализация</a>
-        <a href="/obsluzhivanie/">Обслуживание</a>
+        <a href="videonablyudenie/">Видеонаблюдение</a>
+        <a href="skud/">СКУД</a>
+        <a href="pozharnaya-signalizaciya/">Пожарная сигнализация</a>
+        <a href="ohrannaya-signalizaciya/">Охранная сигнализация</a>
+        <a href="obsluzhivanie/">Обслуживание</a>
         <a href="#contacts">Контакты</a>
       </nav>
       <div class="header-actions">
@@ -1011,12 +1023,12 @@
       </div>
     </div>
     <div class="wrap mobile-nav" id="mobileNav">
-      <a href="/videonablyudenie/">Видеонаблюдение</a>
-      <a href="/skud/">СКУД</a>
-      <a href="/pozharnaya-signalizaciya/">Пожарная сигнализация</a>
-      <a href="/ohrannaya-signalizaciya/">Охранная сигнализация</a>
-      <a href="/obsluzhivanie/">Обслуживание</a>
-      <a href="/penza/">Пенза</a>
+      <a href="videonablyudenie/">Видеонаблюдение</a>
+      <a href="skud/">СКУД</a>
+      <a href="pozharnaya-signalizaciya/">Пожарная сигнализация</a>
+      <a href="ohrannaya-signalizaciya/">Охранная сигнализация</a>
+      <a href="obsluzhivanie/">Обслуживание</a>
+      <a href="penza/">Пенза</a>
       <a href="#contacts">Контакты</a>
       <a href="tel:89270942331">Позвонить</a>
     </div>
@@ -1070,7 +1082,7 @@
             <span class="service-num">01</span>
             <strong>📷 Видеонаблюдение</strong>
             <p>Аналоговые и IP-камеры, видеорегистраторы с выводом в интернет, купольные, уличные и ИК-камеры для круглосуточного наблюдения.</p>
-            <a class="btn secondary" href="/videonablyudenie/">Подробнее</a>
+            <a class="btn secondary" href="videonablyudenie/">Подробнее</a>
           </article>
           <article class="service-card">
             <span class="service-num">02</span>
@@ -1078,7 +1090,7 @@
             <p>Структурированные кабельные сети, локальные сети, шкафы, 
 коммутация и кабельная инфраструктура для промышленных и 
 административных объектов.</p>
-            <a class="btn secondary" href="/skud/">Подробнее</a>
+            <a class="btn secondary" href="skud/">Подробнее</a>
           </article>
           <article class="service-card">
             <span class="service-num">03</span>
@@ -1086,25 +1098,25 @@
             <p>Технические средства охраны, датчики движения, открытия 
 дверей и окон, тревожные линии, GSM-оповещение и интеграция с пультом 
 охраны.</p>
-            <a class="btn secondary" href="/ohrannaya-signalizaciya/">Подробнее</a>
+            <a class="btn secondary" href="ohrannaya-signalizaciya/">Подробнее</a>
           </article>
           <article class="service-card">
             <span class="service-num">04</span>
             <strong>🪪 Системы контроля доступа</strong>
             <p>СКУД, турникеты, электронные замки, домофоны, видеодомофоны и пропускные системы для офисов, школ и производственных объектов.</p>
-            <a class="btn secondary" href="/skud/">Подробнее</a>
+            <a class="btn secondary" href="skud/">Подробнее</a>
           </article>
           <article class="service-card">
             <span class="service-num">05</span>
             <strong>🚧 Периметровая охрана</strong>
             <p>Инженерные заграждения, заборы и средства периметровой охраны для промышленных предприятий, складов и частных территорий.</p>
-            <a class="btn secondary" href="/ohrannaya-signalizaciya/">Подробнее</a>
+            <a class="btn secondary" href="ohrannaya-signalizaciya/">Подробнее</a>
           </article>
           <article class="service-card">
             <span class="service-num">06</span>
             <strong>📡 Средства коммуникации и связи</strong>
             <p>Системы внутренней и внешней связи, локальные сети, диспетчерские решения и технические средства обеспечения безопасности.</p>
-            <a class="btn secondary" href="/obsluzhivanie/">Подробнее</a>
+            <a class="btn secondary" href="obsluzhivanie/">Подробнее</a>
           </article>
         </div>
       </div>
@@ -1260,12 +1272,12 @@
       <div class="wrap">
         <div class="section-head"><div><div class="section-kicker">Направления</div><h2>Наши услуги</h2></div><p class="section-desc">Основные коммерческие направления Диполь-М собраны в отдельных разделах, чтобы быстро перейти к нужному типу работ и запросить расчет.</p></div>
         <div class="seo-links-grid">
-          <a class="seo-link-card" href="/videonablyudenie/"><strong>Видеонаблюдение</strong><p>IP-камеры, видеорегистраторы, архив, удаленный доступ и монтаж камер видеонаблюдения в Пензе.</p></a>
-          <a class="seo-link-card" href="/skud/"><strong>СКУД</strong><p>Контроль доступа, турникеты, электронные замки, домофоны и пропускные системы.</p></a>
-          <a class="seo-link-card" href="/pozharnaya-signalizaciya/"><strong>Пожарная сигнализация</strong><p>Проектирование, монтаж, пусконаладка и обслуживание систем пожарной безопасности.</p></a>
-          <a class="seo-link-card" href="/ohrannaya-signalizaciya/"><strong>Охранная сигнализация</strong><p>Датчики, тревожные линии, GSM-оповещение и интеграция с другими системами объекта.</p></a>
-          <a class="seo-link-card" href="/obsluzhivanie/"><strong>Обслуживание систем</strong><p>Регламентные проверки, диагностика, ремонт, модернизация и поддержка инженерных систем.</p></a>
-          <a class="seo-link-card" href="/penzenskaya-oblast/"><strong>Работы по области</strong><p>Пенза, Заречный, Кузнецк, Каменка, Нижний Ломов, Сердобск, Никольск и Мокшан.</p></a>
+          <a class="seo-link-card" href="videonablyudenie/"><strong>Видеонаблюдение</strong><p>IP-камеры, видеорегистраторы, архив, удаленный доступ и монтаж камер видеонаблюдения в Пензе.</p></a>
+          <a class="seo-link-card" href="skud/"><strong>СКУД</strong><p>Контроль доступа, турникеты, электронные замки, домофоны и пропускные системы.</p></a>
+          <a class="seo-link-card" href="pozharnaya-signalizaciya/"><strong>Пожарная сигнализация</strong><p>Проектирование, монтаж, пусконаладка и обслуживание систем пожарной безопасности.</p></a>
+          <a class="seo-link-card" href="ohrannaya-signalizaciya/"><strong>Охранная сигнализация</strong><p>Датчики, тревожные линии, GSM-оповещение и интеграция с другими системами объекта.</p></a>
+          <a class="seo-link-card" href="obsluzhivanie/"><strong>Обслуживание систем</strong><p>Регламентные проверки, диагностика, ремонт, модернизация и поддержка инженерных систем.</p></a>
+          <a class="seo-link-card" href="penzenskaya-oblast/"><strong>Работы по области</strong><p>Пенза, Заречный, Кузнецк, Каменка, Нижний Ломов, Сердобск, Никольск и Мокшан.</p></a>
         </div>
       </div>
     </section>
@@ -1287,7 +1299,7 @@
 
     <section class="section soft" id="faq"><div class="wrap"><div class="section-head"><div><div class="section-kicker">FAQ</div><h2>Частые вопросы</h2></div><p class="section-desc">Короткие ответы на вопросы, с которыми чаще всего обращаются перед монтажом или обслуживанием систем безопасности.</p></div><div class="faq-grid"><article class="faq-item"><strong>Сколько стоит монтаж видеонаблюдения?</strong><p>Стоимость зависит от количества камер, типа объекта, способа прокладки кабеля, архива записи и требований к удаленному доступу. Обычно расчет готовится после обследования объекта и подбора оборудования под задачу.</p></article><article class="faq-item"><strong>Сколько времени занимает установка СКУД?</strong><p>Небольшую систему контроля доступа для офиса можно установить за несколько рабочих дней. Для проходных, производственных площадок и объектов с интеграцией сроки определяются после проектирования.</p></article><article class="faq-item"><strong>Выполняете ли вы обслуживание систем безопасности?</strong><p>Да, Диполь-М выполняет гарантийное и постгарантийное обслуживание видеонаблюдения, СКУД, охранной сигнализации, пожарной сигнализации и слаботочных сетей.</p></article><article class="faq-item"><strong>Работаете ли вы с коммерческими объектами?</strong><p>Да, компания работает с офисами, магазинами, складами, производственными предприятиями, учебными учреждениями и административными зданиями в Пензе и Пензенской области.</p></article><article class="faq-item"><strong>Есть ли гарантия на оборудование?</strong><p>На оборудование действует гарантия производителя, а на выполненные монтажные и пусконаладочные работы предоставляются гарантийные обязательства по договору.</p></article></div></div></section>
 
-    <section class="section" id="regions"><div class="wrap"><div class="section-head"><div><div class="section-kicker">География</div><h2>Работаем в Пензе и городах области</h2></div><p class="section-desc">Отдельные страницы помогают быстро найти услуги для конкретного города или всего региона.</p></div><div class="region-grid"><a class="region-card" href="/penza/"><strong>Пенза</strong><p>Видеонаблюдение, СКУД, пожарная и охранная сигнализация для объектов в городе.</p></a><a class="region-card" href="/zarechnyj/"><strong>Заречный</strong><p>Инженерные системы безопасности для магазинов, учреждений и производственных объектов.</p></a><a class="region-card" href="/kuzneck/"><strong>Кузнецк</strong><p>Монтаж и обслуживание систем безопасности с выездом специалистов.</p></a><a class="region-card" href="/penzenskaya-oblast/"><strong>Пензенская область</strong><p>Комплексные работы по региону: обследование, проектирование, монтаж и поддержка.</p></a></div></div></section>
+    <section class="section" id="regions"><div class="wrap"><div class="section-head"><div><div class="section-kicker">География</div><h2>Работаем в Пензе и городах области</h2></div><p class="section-desc">Отдельные страницы помогают быстро найти услуги для конкретного города или всего региона.</p></div><div class="region-grid"><a class="region-card" href="penza/"><strong>Пенза</strong><p>Видеонаблюдение, СКУД, пожарная и охранная сигнализация для объектов в городе.</p></a><a class="region-card" href="zarechnyj/"><strong>Заречный</strong><p>Инженерные системы безопасности для магазинов, учреждений и производственных объектов.</p></a><a class="region-card" href="kuzneck/"><strong>Кузнецк</strong><p>Монтаж и обслуживание систем безопасности с выездом специалистов.</p></a><a class="region-card" href="penzenskaya-oblast/"><strong>Пензенская область</strong><p>Комплексные работы по региону: обследование, проектирование, монтаж и поддержка.</p></a></div></div></section>
 
     <section class="section" id="contacts">
       <div class="wrap geo-contact">
@@ -1307,13 +1319,7 @@
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-inner">
-      <div class="footer-brand">Диполь-М</div>
-      <div>ООО НПФ «Диполь-М» · Системы безопасности в Пензе и регионах · © 1991-2026</div>
-      <a href="mailto:dipol@sura.ru">dipol@sura.ru</a>
-    </div>
-  </footer>
+  <footer><div class="wrap footer-sitemap"><div><div class="footer-brand">Диполь-М</div><p>ООО НПФ «Диполь-М» &middot; 1991-2026</p><p><a href="mailto:dipol@sura.ru">dipol@sura.ru</a> &middot; <a href="tel:89270942331">8-927-094-23-31</a></p></div><nav class="footer-map" aria-label="Карта сайта"><strong>Карта сайта</strong><a href="index.html">Главная</a><a href="videonablyudenie/">Видеонаблюдение</a><a href="skud/">СКУД</a><a href="pozharnaya-signalizaciya/">Пожарная сигнализация</a><a href="ohrannaya-signalizaciya/">Охранная сигнализация</a><a href="obsluzhivanie/">Обслуживание систем</a><a href="penza/">Пенза</a><a href="zarechnyj/">Заречный</a><a href="kuzneck/">Кузнецк</a><a href="penzenskaya-oblast/">Пензенская область</a></nav></div></footer>
 
   <script src="/assets/site.js" defer></script>
 </body></html>
