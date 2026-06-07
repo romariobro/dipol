@@ -697,13 +697,10 @@
 
     .portfolio-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      align-items: stretch;
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
     }
     .project-card {
-      display: flex;
-      flex-direction: column;
       overflow: hidden;
       min-height: 100%;
       border-radius: 8px;
@@ -713,18 +710,11 @@
     }
     .project-card img {
       width: 100%;
-      height: 230px;
+      aspect-ratio: 16 / 10;
       object-fit: cover;
       background: #dfe7f0;
     }
-    .project-card div {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 92px;
-      padding: 15px;
-    }
+    .project-card div { padding: 15px; }
     .project-card strong { display: block; margin-bottom: 5px; font-size: 16px; }
     .project-card span { color: var(--muted); font-size: 14px; }
     .client-list-panel {
@@ -1196,47 +1186,47 @@
         </div>
         <div class="portfolio-grid">
           <article class="project-card">
-            <img src="assets/project-magnit.jpg" alt="Сеть магазинов Магнит в Заречном Пензенской области" width="3968" height="2976" loading="lazy">
+            <img src="assets/project-magnit.jpg" alt="Сеть магазинов Магнит в Заречном Пензенской области">
             <div><strong>Сеть магазинов «Магнит»</strong><span>Заречный, Пензенская область</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-weight-control.webp" alt="Пункты весового контроля трассы Москва-Самара" width="640" height="360" loading="lazy">
+            <img src="assets/project-weight-control.webp" alt="Пункты весового контроля трассы Москва-Самара">
             <div><strong>Пункты весового контроля</strong><span>Федеральная автодорога Москва-Самара</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-penzaspirtprom.jpg" alt="ОАО Пензаспиртпром" width="1140" height="370" loading="lazy">
+            <img src="assets/project-penzaspirtprom.jpg" alt="ОАО Пензаспиртпром">
             <div><strong>ОАО «Пензаспиртпром»</strong><span>Промышленный объект</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-feed-mill.jpg" alt="Комбикормовый завод Каменского элеватора" width="720" height="405" loading="lazy">
+            <img src="assets/project-feed-mill.jpg" alt="Комбикормовый завод Каменского элеватора">
             <div><strong>Комбикормовый завод</strong><span>Каменский элеватор</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-plaza.webp" alt="Бизнес-центр Плаза в Пензе" width="640" height="360" loading="lazy">
+            <img src="assets/project-plaza.webp" alt="Бизнес-центр Плаза в Пензе">
             <div><strong>Бизнес-центр «Плаза»</strong><span>г. Пенза</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-rosreestr.webp" alt="Управление Росреестра по Пензенской области" width="640" height="360" loading="lazy">
+            <img src="assets/project-rosreestr.webp" alt="Управление Росреестра по Пензенской области">
             <div><strong>Управление Росреестра</strong><span>Пензенская область</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-art-school.jpg" alt="Детская школа искусств города Заречного" width="2400" height="1600" loading="lazy">
+            <img src="assets/project-art-school.jpg" alt="Детская школа искусств города Заречного">
             <div><strong>Детская школа искусств</strong><span>г. Заречный</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-nizhnelomovsky-distillery.jpg" alt="Нижнеломовский ликеро-водочный завод" width="768" height="576" loading="lazy">
+            <img src="assets/project-nizhnelomovsky-distillery.jpg" alt="Нижнеломовский ликеро-водочный завод">
             <div><strong>Ликеро-водочный завод</strong><span>г. Нижний Ломов</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-railway.jpg" alt="Куйбышевская железная дорога, Пензенское отделение" width="500" height="240" loading="lazy">
+            <img src="assets/project-railway.jpg" alt="Куйбышевская железная дорога, Пензенское отделение">
             <div><strong>Куйбышевская железная дорога</strong><span>Пензенское отделение</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-soyuz-bar.jpg" alt="Бар Союз в Заречном" width="700" height="336" loading="lazy">
+            <img src="assets/project-soyuz-bar.jpg" alt="Бар Союз в Заречном">
             <div><strong>Бар «Союз»</strong><span>г. Заречный</span></div>
           </article>
           <article class="project-card">
-            <img src="assets/project-bakery.jpg" alt="Хлебозавод города Стерлитамак" width="4160" height="3120" loading="lazy">
+            <img src="assets/project-bakery.jpg" alt="Хлебозавод города Стерлитамак">
             <div><strong>Хлебозавод</strong><span>г. Стерлитамак</span></div>
           </article>
         </div>
@@ -1244,7 +1234,7 @@
           <h3>50+ организаций</h3>
           
           <figure class="client-object-visual">
-            <img src="assets/dipolm-object-types.png" alt="Типы объектов, где применяются инженерные системы и системы безопасности Диполь-М" width="640" height="360" loading="lazy">
+            <img src="assets/dipolm-object-types.png" alt="Типы объектов, где применяются инженерные системы и системы безопасности Диполь-М">
           </figure>
           <ul class="client-list">
             <li>Пункты весового контроля Федеральной дирекции автодороги Москва-Самара: Рязань, Сызрань, р.п. Мокшан</li>
