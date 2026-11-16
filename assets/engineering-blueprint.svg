@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="640" viewBox="0 0 1040 640" fill="none">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#85a5c2" stroke-opacity=".2" stroke-width=".7"/>
+    </pattern>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0V7" stroke="#7599ba" stroke-opacity=".3"/>
+    </pattern>
+  </defs>
+  <path fill="url(#grid)" d="M0 0h1040v640H0z"/>
+  <!-- Floor plan, walls, door swings and window openings. -->
+  <g stroke="#7199bd" stroke-opacity=".48" stroke-width="1.3" stroke-linecap="square">
+    <path d="M84 112h400v288H84zM92 120h384v272H92z"/>
+    <path d="M244 120v106m0 48v118m8-272v106m0 48v118M92 280h92m44 0h248M92 288h92m44 0h248M364 120v160m8-160v160"/>
+    <path d="M112 112h72m-72 8h72m100-8h52m-52 8h52M84 164v70m8-70v70M484 308v52m-8-52v52M300 400h78m-78-8h78" stroke-width="3"/>
+    <path d="M244 226h-48a48 48 0 0 0 48 48M184 280v-44a44 44 0 0 1 44 44M364 192h-40a40 40 0 0 1 40-40" stroke-width=".9"/>
+    <path d="M104 132h128v82H104zM264 300h104v76H264z" fill="url(#hatch)" stroke="none"/>
+    <path d="M274 142h68v42h-68zM286 142v42m16-42v42m16-42v42m16-42v42M390 310h60v56h-60zM390 338h60M420 310v56"/>
+    <path d="M116 328h44v36h-44zM116 346h44M138 328v36"/>
+    <!-- Dimension strings and ticks, deliberately without lettering. -->
+    <path d="M84 82h400M84 72v24m160-24v24m120-24v24m120-24v24M80 86l8-8m152 8l8-8m112 8l8-8m112 8l8-8M54 112v288m-10-288h24m-24 168h24m-24 120h24M50 116l8-8m-8 176l8-8m-8 128l8-8M84 426h400M84 416v24m400-24v24M80 430l8-8m392 8l8-8" stroke-width=".8"/>
+    <!-- Second building footprint, entrance and equipment room. -->
+    <path d="M646 180h282v240H646zM654 188h266v224H654zM770 188v110m0 42v72m8-224v110m0 42v72M654 306h116m8 0h142M654 314h116m8 0h142"/>
+    <path d="M770 298h-42a42 42 0 0 0 42 42M674 180h74m-74 8h74M928 214v60m-8-60v60M810 420h74m-74-8h74" stroke-width="1.5"/>
+    <path d="M800 204h96v84h-96zM812 214h72v12h-72zm0 21h72v12h-72zm0 21h72v12h-72zM812 220h4m-4 21h4m-4 21h4"/>
+    <path d="M646 450h282m-282-10v22m282-22v22M642 454l8-8m274 8l8-8M958 180v240m-10-240h20m-20 240h20M954 184l8-8m-8 248l8-8" stroke-width=".8"/>
+    <path d="M606 510h312v56H606zM618 522h288m-288 11h288m-288 11h288m-288 11h288M638 510v56m224-56v56" stroke-width=".8"/>
+  </g>
+  <!-- Cable routes and connection nodes. -->
+  <g stroke="#527fa8" stroke-opacity=".38" stroke-width="1.4" stroke-dasharray="7 7">
+    <path d="M134 156h78v82h92v112h218V244h72v-98h252v75M522 350v144h-120v64H194v-84H44M848 362h156v118h36"/>
+  </g>
+  <g stroke="#527fa8" stroke-opacity=".5" fill="#edf4fa" stroke-width="1.3">
+    <circle cx="134" cy="156" r="5"/><circle cx="304" cy="350" r="5"/><circle cx="522" cy="350" r="5"/><circle cx="846" cy="221" r="5"/><circle cx="848" cy="362" r="5"/>
+    <path d="M516 238h12v12h-12zM396 488h12v12h-12zM188 552h12v12h-12z"/>
+    <path d="M570 80h24m-12-12v24M556 578h24m-12-12v24M1000 94h24m-12-12v24" stroke-width=".8"/>
+  </g>
+</svg>
