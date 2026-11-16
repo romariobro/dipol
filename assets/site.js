@@ -32,7 +32,8 @@ if (gallery) {
     current = (index + thumbs.length) % thumbs.length;
     const selected = thumbs[current];
     const source = selected.querySelector('img');
-    photo.src = source.getAttribute('src');
+    photo.src = selected.dataset.fullSrc || source.getAttribute('src');
+    photo.srcset = selected.dataset.fullSrcset || '';
     photo.alt = source.alt;
     document.getElementById('galleryTitle').textContent = selected.querySelector('span').textContent;
     document.getElementById('galleryPlace').textContent = selected.querySelector('small').textContent;
