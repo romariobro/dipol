@@ -1,0 +1,17 @@
+# Keep private documents and development files out of static asset uploads.
+.git/
+.github/
+.local/
+tmp/
+temp/
+output/
+BETONIUM-documents/
+BETONIUM-documents.zip
+.gitignore
+.assetsignore
+wrangler.jsonc
+README.md
+SEO_REPORT.md
+FRONTEND_BRIEF.md
+**/*.py
+**/PROMPTS.md

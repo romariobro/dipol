@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
@@ -22,12 +22,12 @@
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "ООО НПФ «Диполь-М»",
+  "name": "Диполь",
   "alternateName": "Диполь-М",
   "url": "https://dipolm.ru",
-  "logo": "https://dipolm.ru/dipol.png",
+  "logo": "https://dipolm.ru/assets/dipol-logo-documents-v2.png",
   "image": "https://dipolm.ru/og-image.jpg",
-  "telephone": "+79270942331",
+  "telephone": ["+79095874977", "+79270942331"],
   "email": "dipol@sura.ru",
   "description": "Проектирование, монтаж, пусконаладка и обслуживание инженерных систем безопасности, видеонаблюдения, СКУД, пожарной и охранной сигнализации в Пензе и Пензенской области.",
   "areaServed": [
@@ -1027,13 +1027,14 @@
     .cta-panel .btn { flex: 0 0 auto; }
     @media (max-width: 860px) { .seo-links-grid, .faq-grid, .region-grid { grid-template-columns: 1fr; } .cta-panel { align-items: stretch; flex-direction: column; } .cta-panel .btn { width: 100%; } }
   </style>
+  <link rel="stylesheet" href="assets/first-site-updates.css?v=20261116-final2">
 </head>
 <body>
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span class="topbar-text">Проектирование, монтаж, обслуживание инженерных систем. Пенза и соседние регионы.</span>
       <div class="topbar-links">
-        <a href="tel:89270942331">8-927-094-23-31</a>
+        <a href="tel:+79095874977">8-909-587-49-77</a> <span aria-hidden="true"> · </span> <a href="tel:+79270942331">8-927-094-23-31</a>
         <a href="mailto:dipol@sura.ru">dipol@sura.ru</a>
       </div>
     </div>
@@ -1041,12 +1042,8 @@
 
   <header class="header">
     <div class="wrap header-inner">
-      <a class="brand" href="#home" aria-label="Диполь-М">
-        <span class="brand-mark">Д</span>
-        <span>
-          <span class="brand-name">Диполь-М</span>
-          <span class="brand-note">Системы безопасности с 1991 года</span>
-        </span>
+      <a class="brand" href="#home" aria-label="Диполь">
+        <img class="brand-logo" src="assets/dipol-logo-documents-v2.png" alt="Диполь — инженерные системы" width="2172" height="724">
       </a>
       <nav class="nav" aria-label="Основная навигация">
         <a href="videonablyudenie/">Видеонаблюдение</a>
@@ -1058,7 +1055,7 @@
       </nav>
       <div class="header-actions">
         <a class="btn" href="#contacts">Получить расчет</a>
-        <button class="menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false" id="menuButton">
+        <button class="menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav" id="menuButton">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -1071,211 +1068,63 @@
       <a href="obsluzhivanie/">Обслуживание</a>
       <a href="penza/">Пенза</a>
       <a href="#contacts">Контакты</a>
-      <a href="tel:89270942331">Позвонить</a>
+      <a href="tel:+79095874977">Позвонить</a>
     </div>
   </header>
 
   <section class="hero" id="home">
     <div class="wrap hero-inner">
       <div>
-        
-        <h1>Профессиональная работа с 1991 года.</h1>
-        
-        
-        
+
+        <span class="eyebrow">Профессиональная работа с 1991 года</span>
+        <h1>Системы безопасности для вашего объекта</h1>
+        <p class="hero-lead">Проектируем, устанавливаем и обслуживаем видеонаблюдение, контроль доступа и инженерные сети в Пензе и области.</p>
+        <div class="hero-actions"><a class="btn" href="#contacts">Обсудить объект</a><a class="btn hero-secondary" href="#gallery">Посмотреть объекты</a></div>
+
+
+
       </div>
     </div>
   </section>
 
   <main>
-    <section class="section soft">
+    <section class="section soft" id="about">
       <div class="wrap">
-        <div class="info-image-panel">
-          <div class="info-image-copy">
-            <div class="section-kicker">Полный цикл</div>
-            <h2>Один подрядчик для всей системы</h2>
-            <p>Бесплатное обследование объекта, проект, поставка оборудования, монтаж, пусконаладка и последующее обслуживание.</p>
-            <ul class="info-image-list">
-              <li>Видеонаблюдение</li>
-              <li>Слаботочные сети</li>
-              <li>Системы Контроля Управления Доступом (СКУД)</li>
-              <li>Периметровая охрана</li>
-            </ul>
-          </div>
-          <div class="info-image-media">
-            <img src="assets/dipolm-systems-grid.png" alt="Видеонаблюдение, СКУД, периметр и диспетчерская как единая система" width="640" height="360">
-          </div>
-        </div>
-      </div>
-    </section>
-<section class="section" id="services">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Услуги</div>
-            <h2>Наши услуги</h2>
-          </div>
-          <p class="section-desc">Полный цикл работ: от проекта и монтажа до пусконаладки, гарантийного и постгарантийного обслуживания.</p>
-        </div>
-        <div class="services-grid">
-          <article class="service-card">
-            <span class="service-num">01</span>
-            <strong>📷 Видеонаблюдение</strong>
-            <p>Аналоговые и IP-камеры, видеорегистраторы с выводом в интернет, купольные, уличные и ИК-камеры для круглосуточного наблюдения.</p>
-            <a class="btn secondary" href="videonablyudenie/">Подробнее</a>
-          </article>
-          <article class="service-card">
-            <span class="service-num">02</span>
-            <strong>🔌 Слаботочные сети</strong>
-            <p>Структурированные кабельные сети, локальные сети, шкафы, 
-коммутация и кабельная инфраструктура для промышленных и 
-административных объектов.</p>
-            <a class="btn secondary" href="skud/">Подробнее</a>
-          </article>
-          <article class="service-card">
-            <span class="service-num">03</span>
-            <strong>🔒 Охранные системы</strong>
-            <p>Технические средства охраны, датчики движения, открытия 
-дверей и окон, тревожные линии, GSM-оповещение и интеграция с пультом 
-охраны.</p>
-            <a class="btn secondary" href="ohrannaya-signalizaciya/">Подробнее</a>
-          </article>
-          <article class="service-card">
-            <span class="service-num">04</span>
-            <strong>🪪 Системы контроля доступа</strong>
-            <p>СКУД, турникеты, электронные замки, домофоны, видеодомофоны и пропускные системы для офисов, школ и производственных объектов.</p>
-            <a class="btn secondary" href="skud/">Подробнее</a>
-          </article>
-          <article class="service-card">
-            <span class="service-num">05</span>
-            <strong>🚧 Периметровая охрана</strong>
-            <p>Инженерные заграждения, заборы и средства периметровой охраны для промышленных предприятий, складов и частных территорий.</p>
-            <a class="btn secondary" href="ohrannaya-signalizaciya/">Подробнее</a>
-          </article>
-          <article class="service-card">
-            <span class="service-num">06</span>
-            <strong>📡 Средства коммуникации и связи</strong>
-            <p>Системы внутренней и внешней связи, локальные сети, диспетчерские решения и технические средства обеспечения безопасности.</p>
-            <a class="btn secondary" href="obsluzhivanie/">Подробнее</a>
-          </article>
-        </div>
-      </div>
-    </section>
-<section class="section" id="about">
-      <div class="wrap about-layout">
-        <div class="about-media-column">
-          <div class="about-photo">
-            <img src="assets/about-security-collage.png" alt="Инженерные системы безопасности на объекте" width="640" height="360" loading="lazy">
-          </div>
-          <div class="about-side-card">
+        <div class="section-head"><div><div class="section-kicker">О предприятии</div><h2>Полный цикл</h2></div></div>
+        <div class="about-layout">
+          <div class="about-intro"><div class="about-copy">
             <strong>Один подрядчик для всей системы</strong>
-            <p>Проект, поставка оборудования, монтаж, пусконаладка и последующее обслуживание без лишних подрядчиков.</p>
-          </div>
-        </div>
-        <div class="about-intro">
-          <div class="section-kicker">О предприятии</div>
-          <div class="about-copy">
-            <strong>Диполь-М проектирует и монтирует комплексные системы безопасности и связи</strong>
-            <p>ООО НПФ «Диполь-М» работает с 1991 года и выполняет монтаж и пусконаладку систем видеонаблюдения, охранных систем, СКУД, периметровой охраны, слаботочных сетей и средств коммуникации.</p>
-            <p>Собственная производственная база, опытные специалисты и конфиденциальный подход позволяют решать задачи для промышленных, административных, торговых и учебных объектов.</p>
-          </div>
-          <div class="about-fact-grid">
-            <div class="about-fact"><b>1991</b><span>год основания</span></div>
-            <div class="about-fact"><b>200+</b><span>реализованных проектов</span></div>
-            <div class="about-fact"><b>10+</b><span>видов инженерных систем</span></div>
-          </div>
-          <div class="features">
-            <div class="feature"><strong>Собственная база</strong><span>Помогает держать сроки, качество и адекватную стоимость работ.</span></div>
-            <div class="feature"><strong>Конфиденциальность</strong><span>Не раскрываем схемы, данные и особенности систем на объекте.</span></div>
-            <div class="feature"><strong>Индивидуальный подход</strong><span>Подбираем решения под задачи, бюджет и формат конкретной территории.</span></div>
-            <div class="feature"><strong>Объекты разного масштаба</strong><span>Школы, бизнес-центры, склады, производства и торговые объекты.</span></div>
-          </div>
+            <p>Бесплатное обследование объекта, проект, поставка оборудования, монтаж, пусконаладка и последующее обслуживание.</p>
+            <p>Диполь работает с 1991 года. Проектируем и монтируем комплексные системы безопасности и связи.</p>
+            <p>Собственная производственная база, опытные специалисты и конфиденциальный подход позволяют решать задачи промышленных, административных, торговых и учебных объектов.</p>
+          </div></div>
+          <div class="about-screen"><img src="assets/imagery/security-control-v1.webp" alt="Диспетчерское место с мониторингом систем безопасности" width="1536" height="1024" loading="lazy" decoding="async"></div>
         </div>
       </div>
     </section>
+    <section class="section " id="systems"><div class="wrap"><div class="section-head"><h2>Системы безопасности</h2></div><div class="light-grid systems-grid"><article class="light-card"><img src="assets/imagery/video-surveillance-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3><a href="videonablyudenie/">Видеонаблюдение →</a></h3></article><article class="light-card"><img src="assets/imagery/structured-network-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3><a href="#contacts">Слаботочные сети →</a></h3></article><article class="light-card"><img src="assets/imagery/access-control-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3><a href="skud/">Системы контроля и управления доступом (СКУД) →</a></h3></article><article class="light-card"><img src="assets/imagery/perimeter-security-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3><a href="#contacts">Периметровая охрана →</a></h3></article><article class="light-card"><img src="assets/imagery/weigh-control-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3>Весовой контроль</h3><p>Пункты взвешивания транспорта, контроль проезда и работа с данными.</p><a class="image-card-link" href="#contacts">Обсудить пункт контроля →</a></article></div></div></section>
+<section class="section soft" id="portfolio"><div class="wrap"><div class="section-head"><h2>Нам доверяют</h2><p class="section-desc">Типы объектов, с которыми мы работаем. Выполненные проекты — в <a href="#gallery">фотогалерее</a>.</p></div><div class="light-grid object-grid"><article class="light-card"><img src="assets/imagery/object-factory-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3>Заводы</h3></article><article class="light-card"><img src="assets/imagery/object-school-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3>Школы</h3></article><article class="light-card"><img src="assets/imagery/object-public-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3>Государственные учреждения</h3></article><article class="light-card"><img src="assets/imagery/object-office-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3>Бизнес-центры</h3></article><article class="light-card"><img src="assets/imagery/object-retail-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><h3>Торговые центры и магазины</h3></article></div></div></section>
+<section class="section " id="services"><div class="wrap"><div class="section-head"><h2>Наши услуги</h2></div><div class="services-grid"><article class="service-card"><img src="assets/imagery/project-proposal-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><span class="service-num">01</span><h3>Проектирование</h3><p>Разрабатываем проект и подбираем оборудование под задачи объекта.</p></article><article class="service-card"><img src="assets/imagery/engineering-panel-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><span class="service-num">02</span><h3>Монтаж</h3><p>Устанавливаем оборудование, настраиваем и проверяем систему.</p></article><article class="service-card"><img src="assets/imagery/it-maintenance-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><span class="service-num">03</span><h3>Эксплуатация</h3><p>Обслуживаем системы и поддерживаем их работоспособность.</p></article><article class="service-card"><img src="assets/imagery/security-control-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><span class="service-num">04</span><h3>Аудит объектов</h3><p>Оцениваем состояние оборудования и предлагаем необходимые улучшения.</p></article><article class="service-card"><img src="assets/imagery/it-maintenance-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><span class="service-num">05</span><h3>Обслуживание ИТ-инфраструктуры</h3><p>Диагностика и сопровождение серверов, рабочих мест и сетевого оборудования.</p></article><article class="service-card"><img src="assets/imagery/software-commissioning-v1.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"><span class="service-num">06</span><h3>Наладка ПО</h3><p>Установка, настройка и проверка программного обеспечения под задачи объекта.</p></article></div></div></section>
 
-    <section class="section soft" id="process">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Как мы работаем</div>
-            <h2>От первого звонка до сдачи объекта</h2>
-          </div>
-          <p class="section-desc">Четкий процесс — от первого звонка до сдачи объекта под ключ.</p>
-        </div>
-        <div class="work-grid">
-          <article class="work-step"><b>1</b><strong>Обследование объекта</strong><p>Выезжаем на объект, оцениваем задачи и составляем техническое задание. Бесплатно для Пензы и области.</p></article>
-          <article class="work-step"><b>2</b><strong>Проектирование</strong><p>Разрабатываем проектную документацию, подбираем оборудование и комплектующие.</p></article>
-          <article class="work-step"><b>3</b><strong>Монтаж и наладка</strong><p>Профессиональный монтаж с соблюдением сроков, пусконаладочные работы и тестирование.</p></article>
-          <article class="work-step"><b>4</b><strong>Гарантийное обслуживание</strong><p>Гарантия на выполненные работы и постгарантийное техническое обслуживание.</p></article>
-        </div>
+
+<section class="section" id="gallery"><div class="wrap">
+      <div class="section-head"><h2>Фотогалерея объектов</h2></div>
+      <div class="object-gallery" role="region" aria-roledescription="карусель" aria-label="Фотографии объектов">
+        <figure class="gallery-stage"><img id="galleryImage" src="assets/project-magnit.jpg" alt="Сеть магазинов Магнит в Заречном Пензенской области" width="1180" height="650"><figcaption><strong id="galleryTitle">Сеть магазинов «Магнит»</strong><span id="galleryPlace">Заречный, Пензенская область</span></figcaption></figure>
+        <div class="gallery-controls"><button type="button" id="galleryPrev" aria-label="Предыдущий объект">←</button><span id="galleryCount" role="status" aria-live="polite">1 / 11</span><button type="button" id="galleryNext" aria-label="Следующий объект">→</button></div>
+        <div class="gallery-strip" aria-label="Лента объектов"><button class="gallery-thumb" type="button" aria-label="Показать: Сеть магазинов «Магнит»" aria-pressed="true" data-gallery-index="0"><img src="assets/project-magnit.jpg" alt="Сеть магазинов Магнит в Заречном Пензенской области" width="160" height="100" loading="lazy"><span>Сеть магазинов «Магнит»</span><small>Заречный, Пензенская область</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Пункты весового контроля" aria-pressed="false" data-gallery-index="1"><img src="assets/project-weight-control.webp" alt="Пункты весового контроля трассы Москва-Самара" width="160" height="100" loading="lazy"><span>Пункты весового контроля</span><small>Федеральная автодорога Москва-Самара</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: ОАО «Пензаспиртпром»" aria-pressed="false" data-gallery-index="2"><img src="assets/project-penzaspirtprom.jpg" alt="ОАО Пензаспиртпром" width="160" height="100" loading="lazy"><span>ОАО «Пензаспиртпром»</span><small>Промышленный объект</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Комбикормовый завод" aria-pressed="false" data-gallery-index="3"><img src="assets/project-feed-mill.jpg" alt="Комбикормовый завод Каменского элеватора" width="160" height="100" loading="lazy"><span>Комбикормовый завод</span><small>Каменский элеватор</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Бизнес-центр «Плаза»" aria-pressed="false" data-gallery-index="4"><img src="assets/project-plaza.webp" alt="Бизнес-центр Плаза в Пензе" width="160" height="100" loading="lazy"><span>Бизнес-центр «Плаза»</span><small>г. Пенза</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Управление Росреестра" aria-pressed="false" data-gallery-index="5"><img src="assets/project-rosreestr.webp" alt="Управление Росреестра по Пензенской области" width="160" height="100" loading="lazy"><span>Управление Росреестра</span><small>Пензенская область</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Детская школа искусств" aria-pressed="false" data-gallery-index="6"><img src="assets/project-art-school.jpg" alt="Детская школа искусств города Заречного" width="160" height="100" loading="lazy"><span>Детская школа искусств</span><small>г. Заречный</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Ликеро-водочный завод" aria-pressed="false" data-gallery-index="7"><img src="assets/project-nizhnelomovsky-distillery.jpg" alt="Нижнеломовский ликеро-водочный завод" width="160" height="100" loading="lazy"><span>Ликеро-водочный завод</span><small>г. Нижний Ломов</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Куйбышевская железная дорога" aria-pressed="false" data-gallery-index="8"><img src="assets/project-railway.jpg" alt="Куйбышевская железная дорога, Пензенское отделение" width="160" height="100" loading="lazy"><span>Куйбышевская железная дорога</span><small>Пензенское отделение</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Бар «Союз»" aria-pressed="false" data-gallery-index="9"><img src="assets/project-soyuz-bar.jpg" alt="Бар Союз в Заречном" width="160" height="100" loading="lazy"><span>Бар «Союз»</span><small>г. Заречный</small></button>
+<button class="gallery-thumb" type="button" aria-label="Показать: Хлебозавод" aria-pressed="false" data-gallery-index="10"><img src="assets/project-bakery.jpg" alt="Хлебозавод города Стерлитамак" width="160" height="100" loading="lazy"><span>Хлебозавод</span><small>г. Стерлитамак</small></button></div>
       </div>
-    </section>
-
-    <section class="section" id="portfolio">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Объекты</div>
-            <h2>Фотогалерея объектов</h2>
-          </div>
-          <p class="section-desc">Более 50 организаций: промышленные 
-предприятия, торговые сети, учреждения образования, административные 
-здания и объекты федерального значения.</p>
-        </div>
-        <div class="portfolio-grid">
-          <article class="project-card">
-            <img src="assets/project-magnit.jpg" alt="Сеть магазинов Магнит в Заречном Пензенской области">
-            <div><strong>Сеть магазинов «Магнит»</strong><span>Заречный, Пензенская область</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-weight-control.webp" alt="Пункты весового контроля трассы Москва-Самара">
-            <div><strong>Пункты весового контроля</strong><span>Федеральная автодорога Москва-Самара</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-penzaspirtprom.jpg" alt="ОАО Пензаспиртпром">
-            <div><strong>ОАО «Пензаспиртпром»</strong><span>Промышленный объект</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-feed-mill.jpg" alt="Комбикормовый завод Каменского элеватора">
-            <div><strong>Комбикормовый завод</strong><span>Каменский элеватор</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-plaza.webp" alt="Бизнес-центр Плаза в Пензе">
-            <div><strong>Бизнес-центр «Плаза»</strong><span>г. Пенза</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-rosreestr.webp" alt="Управление Росреестра по Пензенской области">
-            <div><strong>Управление Росреестра</strong><span>Пензенская область</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-art-school.jpg" alt="Детская школа искусств города Заречного">
-            <div><strong>Детская школа искусств</strong><span>г. Заречный</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-nizhnelomovsky-distillery.jpg" alt="Нижнеломовский ликеро-водочный завод">
-            <div><strong>Ликеро-водочный завод</strong><span>г. Нижний Ломов</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-railway.jpg" alt="Куйбышевская железная дорога, Пензенское отделение">
-            <div><strong>Куйбышевская железная дорога</strong><span>Пензенское отделение</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-soyuz-bar.jpg" alt="Бар Союз в Заречном">
-            <div><strong>Бар «Союз»</strong><span>г. Заречный</span></div>
-          </article>
-          <article class="project-card">
-            <img src="assets/project-bakery.jpg" alt="Хлебозавод города Стерлитамак">
-            <div><strong>Хлебозавод</strong><span>г. Стерлитамак</span></div>
-          </article>
-        </div>
-        <div class="client-list-panel">
-          <h3>50+ организаций</h3>
-          
-          <figure class="client-object-visual">
-            <img src="assets/dipolm-object-types.png" alt="Типы объектов, где применяются инженерные системы и системы безопасности Диполь-М">
-          </figure>
-          <ul class="client-list">
+      <details class="client-directory"><summary>Все заказчики</summary><ul class="client-list">
             <li>Пункты весового контроля Федеральной дирекции автодороги Москва-Самара: Рязань, Сызрань, р.п. Мокшан</li>
             <li>Комбикормовый завод Каменского элеватора</li>
             <li>Нижнеломовский ликеро-водочный завод</li>
@@ -1300,13 +1149,29 @@
             <li>МБОУ СОШ г. Сурска</li>
             <li>Стадион г. Городище</li>
             <li>МБОУ СОШ с. Канаевка и другие объекты</li>
-          </ul>
+          </ul></details>
+    </div></section>
+    <section class="section soft" id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Как мы работаем</h2>
+          </div>
+          <p class="section-desc">Согласуем задачи и сроки, проверим систему и передадим её в эксплуатацию.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-step"><b>1</b><strong>Обследование объекта</strong><p>Уточняем задачу, изучаем территорию и действующие системы.</p></article>
+          <article class="work-step"><b>2</b><strong>Проектирование</strong><p>Определяем оборудование, состав работ и согласуем предложение.</p></article>
+          <article class="work-step"><b>3</b><strong>Монтаж и наладка</strong><p>Устанавливаем оборудование и проверяем работу системы.</p></article>
+          <article class="work-step"><b>4</b><strong>Передача и обслуживание</strong><p>Сдаём результат и обсуждаем дальнейшее сопровождение.</p></article>
         </div>
       </div>
     </section>
+
+
 <section class="section soft" id="seo-services">
       <div class="wrap">
-        <div class="section-head"><div><div class="section-kicker">Направления</div><h2>Наши услуги</h2></div><p class="section-desc">Основные коммерческие направления Диполь-М собраны в отдельных разделах, чтобы быстро перейти к нужному типу работ и запросить расчет.</p></div>
+        <div class="section-head"><div><h2>Подробно о решениях</h2></div><p class="section-desc">Выберите систему, чтобы узнать о составе работ.</p></div>
         <div class="seo-links-grid">
           <a class="seo-link-card" href="videonablyudenie/"><strong>Видеонаблюдение</strong><p>IP-камеры, видеорегистраторы, архив, удаленный доступ и монтаж камер видеонаблюдения в Пензе.</p></a>
           <a class="seo-link-card" href="skud/"><strong>СКУД</strong><p>Контроль доступа, турникеты, электронные замки, домофоны и пропускные системы.</p></a>
@@ -1320,8 +1185,8 @@
 
     <section class="section" id="local-seo">
       <div class="wrap">
-        <div class="section-head"><div><div class="section-kicker">Пенза и область</div><h2>Монтаж инженерных систем безопасности в Пензе и Пензенской области</h2></div><p class="section-desc">Диполь-М работает с коммерческими, производственными, административными и социальными объектами, где важны надежность, аккуратный монтаж и понятная ответственность подрядчика.</p></div>
-        <div class="seo-text">
+        <div class="section-head"><div><h2>Безопасность объектов в Пензе и области</h2></div><p class="section-desc">Диполь-М работает с коммерческими, производственными, административными и социальными объектами, где важны надежность, аккуратный монтаж и понятная ответственность подрядчика.</p></div>
+        <details class="project-details"><summary>Подробнее о работах в регионе</summary><div class="seo-text">
           <p>Компания Диполь-М выполняет проектирование, поставку, монтаж и обслуживание инженерных систем безопасности в Пензе и Пензенской области. В работу входят видеонаблюдение, СКУД, охранная сигнализация, пожарная сигнализация, структурированные кабельные сети, периметровая охрана и средства связи. Для заказчика это удобно: обследование объекта, подбор оборудования, монтаж, пусконаладка и дальнейшая техническая поддержка остаются в зоне ответственности одного подрядчика.</p>
           <p>Основной регион работы — Пенза, Заречный, Кузнецк, Каменка, Нижний Ломов, Сердобск, Никольск, Мокшан и другие населенные пункты Пензенской области. Специалисты учитывают формат объекта, режим работы, требования охраны, количество сотрудников и посетителей, особенности входных групп, складских зон, производственных помещений и прилегающей территории. Поэтому решение не сводится к набору камер или датчиков: система проектируется под реальные сценарии эксплуатации.</p>
           <p>Для магазинов и офисов обычно важны контроль кассовых зон, входов, коридоров, серверных и помещений с материальными ценностями. Для производственных предприятий и складов дополнительно рассматриваются периметр, КПП, зоны погрузки, учет доступа персонала и транспорта. В учебных и административных зданиях особое значение имеют пожарная безопасность, стабильная связь, корректная прокладка кабельных линий и возможность дальнейшего обслуживания без остановки работы объекта.</p>
@@ -1329,13 +1194,13 @@
           <p>Перед расчетом стоимости специалисты уточняют задачу, проводят обследование, оценивают трассы прокладки, питание, точки монтажа и условия эксплуатации оборудования. Такой подход помогает избежать лишних расходов и получить систему, которую удобно обслуживать после запуска. Диполь-М также выполняет модернизацию существующих решений: замену устаревших камер, восстановление кабельных линий, настройку удаленного доступа, проверку датчиков и расширение действующих систем безопасности.</p>
           <p>Если объект находится в Пензе или Пензенской области, можно запросить консультацию и расчет. Компания подготовит понятное предложение по составу оборудования, этапам работ и срокам реализации, а при необходимости организует бесплатный выезд специалиста для первичного обследования объекта.</p>
         </div>
-        <div class="cta-panel"><div><strong>Нужен расчет для объекта?</strong><p>Позвоните или отправьте письмо: 8-927-094-23-31, dipol@sura.ru. Подготовим предложение по монтажу и обслуживанию.</p></div><a class="btn orange" href="tel:89270942331">Заказать расчет стоимости</a></div>
+        </details><div class="cta-panel"><div><strong>Нужен расчет для объекта?</strong><p>Позвоните или отправьте письмо: 8-909-587-49-77, 8-927-094-23-31, dipol@sura.ru. Подготовим предложение по монтажу и обслуживанию.</p></div><a class="btn orange" href="tel:+79095874977">Заказать расчет стоимости</a></div>
       </div>
     </section>
 
     <section class="section soft" id="faq"><div class="wrap"><div class="section-head"><div><div class="section-kicker">FAQ</div><h2>Частые вопросы</h2></div><p class="section-desc">Короткие ответы на вопросы, с которыми чаще всего обращаются перед монтажом или обслуживанием систем безопасности.</p></div><div class="faq-grid"><article class="faq-item"><strong>Сколько стоит монтаж видеонаблюдения?</strong><p>Стоимость зависит от количества камер, типа объекта, способа прокладки кабеля, архива записи и требований к удаленному доступу. Обычно расчет готовится после обследования объекта и подбора оборудования под задачу.</p></article><article class="faq-item"><strong>Сколько времени занимает установка СКУД?</strong><p>Небольшую систему контроля доступа для офиса можно установить за несколько рабочих дней. Для проходных, производственных площадок и объектов с интеграцией сроки определяются после проектирования.</p></article><article class="faq-item"><strong>Выполняете ли вы обслуживание систем безопасности?</strong><p>Да, Диполь-М выполняет гарантийное и постгарантийное обслуживание видеонаблюдения, СКУД, охранной сигнализации, пожарной сигнализации и слаботочных сетей.</p></article><article class="faq-item"><strong>Работаете ли вы с коммерческими объектами?</strong><p>Да, компания работает с офисами, магазинами, складами, производственными предприятиями, учебными учреждениями и административными зданиями в Пензе и Пензенской области.</p></article><article class="faq-item"><strong>Есть ли гарантия на оборудование?</strong><p>На оборудование действует гарантия производителя, а на выполненные монтажные и пусконаладочные работы предоставляются гарантийные обязательства по договору.</p></article></div></div></section>
 
-    <section class="section" id="regions"><div class="wrap"><div class="section-head"><div><div class="section-kicker">География</div><h2>Работаем в Пензе и городах области</h2></div><p class="section-desc">Отдельные страницы помогают быстро найти услуги для конкретного города или всего региона.</p></div><div class="region-grid"><a class="region-card" href="penza/"><strong>Пенза</strong><p>Видеонаблюдение, СКУД, пожарная и охранная сигнализация для объектов в городе.</p></a><a class="region-card" href="zarechnyj/"><strong>Заречный</strong><p>Инженерные системы безопасности для магазинов, учреждений и производственных объектов.</p></a><a class="region-card" href="kuzneck/"><strong>Кузнецк</strong><p>Монтаж и обслуживание систем безопасности с выездом специалистов.</p></a><a class="region-card" href="penzenskaya-oblast/"><strong>Пензенская область</strong><p>Комплексные работы по региону: обследование, проектирование, монтаж и поддержка.</p></a></div></div></section>
+    <section class="section" id="regions"><div class="wrap"><div class="section-head"><div><div class="section-kicker">География</div><h2>Работаем в Пензе и городах области</h2></div><p class="section-desc">Выберите ваш город, чтобы узнать о работах на объектах в регионе.</p></div><div class="region-grid"><a class="region-card" href="penza/"><strong>Пенза</strong><p>Видеонаблюдение, СКУД, пожарная и охранная сигнализация для объектов в городе.</p></a><a class="region-card" href="zarechnyj/"><strong>Заречный</strong><p>Инженерные системы безопасности для магазинов, учреждений и производственных объектов.</p></a><a class="region-card" href="kuzneck/"><strong>Кузнецк</strong><p>Монтаж и обслуживание систем безопасности с выездом специалистов.</p></a><a class="region-card" href="penzenskaya-oblast/"><strong>Пензенская область</strong><p>Комплексные работы по региону: обследование, проектирование, монтаж и поддержка.</p></a></div></div></section>
 
     <section class="section" id="contacts">
       <div class="wrap geo-contact">
@@ -1346,16 +1211,16 @@
 область, выезд в соседние регионы по согласованию.</p>
         <ul class="contact-list">
           <li><strong>Адрес</strong>440026, г. Пенза, ул. Советская, д. 2, к. 21</li>
-          <li><strong>Телефон</strong><a href="tel:89270942331">8-927-094-23-31</a></li>
-          <li><strong>Факс</strong>(8412) 55-29-30</li>
+          <li><strong>Телефон</strong><a href="tel:+79095874977">8-909-587-49-77</a> <span aria-hidden="true"> · </span> <a href="tel:+79270942331">8-927-094-23-31</a></li>
+
           <li><strong>E-mail</strong><a href="mailto:dipol@sura.ru">dipol@sura.ru</a>, <a href="mailto:moshnin52@mail.ru">moshnin52@mail.ru</a></li>
         </ul>
-        <a class="btn" href="tel:89270942331">Позвонить и обсудить объект</a>
+        <a class="btn" href="tel:+79095874977">Позвонить и обсудить объект</a>
       </div>
     </section>
   </main>
 
-  <footer><div class="wrap footer-sitemap"><div><div class="footer-brand">Диполь-М</div><p>ООО НПФ «Диполь-М» &middot; 1991-2026</p><p><a href="mailto:dipol@sura.ru">dipol@sura.ru</a> &middot; <a href="tel:89270942331">8-927-094-23-31</a></p></div><nav class="footer-map" aria-label="Карта сайта"><strong>Карта сайта</strong><a href="index.html">Главная</a><a href="videonablyudenie/">Видеонаблюдение</a><a href="skud/">СКУД</a><a href="pozharnaya-signalizaciya/">Пожарная сигнализация</a><a href="ohrannaya-signalizaciya/">Охранная сигнализация</a><a href="obsluzhivanie/">Обслуживание систем</a><a href="penza/">Пенза</a><a href="zarechnyj/">Заречный</a><a href="kuzneck/">Кузнецк</a><a href="penzenskaya-oblast/">Пензенская область</a></nav></div></footer>
+  <footer><div class="wrap footer-sitemap"><div><div class="footer-brand">Диполь</div><p>Диполь &middot; 1991-2026</p><p><a href="mailto:dipol@sura.ru">dipol@sura.ru</a> &middot; <a href="tel:+79095874977">8-909-587-49-77</a> <span aria-hidden="true"> · </span> <a href="tel:+79270942331">8-927-094-23-31</a></p></div><nav class="footer-map" aria-label="Карта сайта"><strong>Карта сайта</strong><a href="index.html">Главная</a><a href="videonablyudenie/">Видеонаблюдение</a><a href="skud/">СКУД</a><a href="pozharnaya-signalizaciya/">Пожарная сигнализация</a><a href="ohrannaya-signalizaciya/">Охранная сигнализация</a><a href="obsluzhivanie/">Обслуживание систем</a><a href="penza/">Пенза</a><a href="zarechnyj/">Заречный</a><a href="kuzneck/">Кузнецк</a><a href="penzenskaya-oblast/">Пензенская область</a></nav></div></footer>
 
-  <script src="/assets/site.js" defer></script>
+  <script src="assets/site.js?v=20261116-final" defer></script>
 </body></html>
